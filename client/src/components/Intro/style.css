@@ -1,7 +1,7 @@
 .background {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 900px;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(2, 41, 93, 0.5);
 
 
 }
@@ -24,17 +24,63 @@
     height: 100%;
     object-fit: cover;
 }
+.cloudy_bg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    /* height: 100px; */
+    /* top: 50px; */
+    /* height: 10rem; */
+}
+.cloudy_bg_back{
+    position: absolute;
+    right: 0;
+     height: 30rem;
+     top: 100px;
+    /* size: 20px; */
+    animation: floatAnimation 5s infinite linear;
+    /* background-color: green; */
+    
+}
 
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+.cloudy_bg_bottom{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    bottom: 10px;
+    right: 50px;
+    /* width: 100px; */
+    animation: floatAnimation 3s infinite linear;
+}
+.cloudy_bg_left_bottom{
+    position: absolute;
+    right: 0;
+    height: 150px;
+    width: 150px;
+    bottom: 0px;
+   left:0;
+    /* width: 100px; */
+    animation: floatAnimation 3s infinite linear;
+}
 
 .floating_square {
     border-radius: 50px;
     border: 1px solid rgb(255, 255, 255, 0.5);
-
-
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     position: absolute;
-
     top: -300px;
     left: -200px;
     animation: rotate 30s linear infinite;
@@ -44,12 +90,10 @@
 @keyframes rotate {
     from {
         transform: rotate(0deg);
-
     }
 
     to {
         transform: rotate(360deg);
-
     }
 }
 
@@ -70,14 +114,10 @@
 .intro_left_div h1 {
     margin: 0;
     font-size: 35px;
-
-
-
 }
 
 .fadeInLeftAnimation {
     animation: fadeInLeft;
-
 }
 
 .intro_left_div p {
@@ -86,7 +126,6 @@
     color: #B2B2B2;
     line-height: 25px;
     margin-top: 10px;
-
 }
 
 
@@ -109,7 +148,6 @@
     width: 100%;
     display: flex;
     align-items: left;
-
     flex-direction: column;
 }
 
@@ -214,8 +252,9 @@
     background-color: white;
     border-radius: 50%;
     padding: 20px;
-    height: 80%;
-    width: 80%;
+    height: 60%;
+    width: 60%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .circle img {
