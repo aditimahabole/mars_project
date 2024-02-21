@@ -52,9 +52,6 @@ const App = () => {
 
   const backgroundStyle = {
     backgroundImage: `url(${images[index]})`,
-    height: "600px",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    position: "relative",
   };
 
   const words = texts[textIndex].split(" "); // Split text into words
@@ -64,9 +61,16 @@ const App = () => {
   return (
     <div className="background" style={backgroundStyle}>
       <div className="overlay"></div>
-      <img className="cloudy_bg" src={cloudy_bg} alt="bg" />
+      <div className="cloudy_bg">
+        <img className="cloudy_bg_size" src={cloudy_bg} alt="bg" />
+      </div>
+
       <div className="cloudy_bg_left_bottom">
-        <img className="cloudy_bg_left_bottom_size" src={cloudy_bg_left_bottom} alt="bgb" />
+        <img
+          className="cloudy_bg_left_bottom_size"
+          src={cloudy_bg_left_bottom}
+          alt="bgb"
+        />
       </div>
       <div className="cloudy_bg_back">
         <img className="cloudy_bg_back_size" src={cloudy_bg_back} alt="bgb" />
@@ -84,8 +88,15 @@ const App = () => {
       <div className="floating_square"></div>
 
       <div className="intro_left_div">
-        <div className={"intro_left_div_content"}  >
-        <div className={"intro_left_area " + (isAnimating ? "animate__animated animate__fadeInLeft animate__delay-0.5s" : "")}>
+        <div className={"intro_left_div_content"}>
+          <div
+            className={
+              "intro_left_area " +
+              (isAnimating
+                ? "animate__animated animate__fadeInLeft animate__delay-0.5s"
+                : "")
+            }
+          >
             <span className="span1">25% Off</span>
             <span className="span2">Learn from Today</span>
           </div>
@@ -93,7 +104,9 @@ const App = () => {
             {/* Apply animate__fadeInLeft class conditionally */}
             <h1
               className={
-                isAnimating ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""
+                "intro_headings " + isAnimating
+                  ? "animate__animated animate__fadeInLeft animate__delay-1s"
+                  : ""
               }
             >
               {restOfText} <br />{" "}
@@ -101,7 +114,9 @@ const App = () => {
             </h1>
             <p
               className={
-                isAnimating ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""
+                "intro_p " + isAnimating
+                  ? "animate__animated animate__fadeInLeft animate__delay-1s"
+                  : ""
               }
             >
               Internship can be thought of as the transmission of the values and
@@ -110,7 +125,14 @@ const App = () => {
             </p>
           </div>
           <div className="intro_left_area">
-            <button className={"getstarted_button" + (isAnimating ? " animate__animated animate__fadeInLeft animate__delay-2s" : "") }>
+            <button
+              className={
+                "getstarted_button" +
+                (isAnimating
+                  ? " animate__animated animate__fadeInLeft animate__delay-2s"
+                  : "")
+              }
+            >
               {" "}
               <span className="getStarted_transition"></span>
               <span className="getstarted_gradient"></span>

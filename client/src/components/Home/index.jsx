@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import SecondNavbar from '../SecondNavbar/index'
 import Navbar from '../Navbar/index';
 import Introduction from '../Intro/index';
+import InternshipSection from '../Internships/index'
+// import ShortNavbar from '../ShortNavbar/index';
 // Import the second navbar component
 
 const Index = () => {
@@ -10,7 +12,7 @@ const Index = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Determine whether the user has scrolled down
-      const isScrolled = window.scrollY > 0;
+      const isScrolled = window.scrollY > 5;
       setScrolled(isScrolled);
     };
 
@@ -25,12 +27,11 @@ const Index = () => {
 
   return (
     <>
+     {/* <ShortNavbar /> */}
       {scrolled ? <SecondNavbar /> : <Navbar />}
    
       <Introduction />
-      <section style={{"height":"1247px"}}>
-        hahaahahah
-      </section>
+      <InternshipSection/>
     </>
   );
 };

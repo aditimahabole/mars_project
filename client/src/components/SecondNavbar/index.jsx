@@ -1,5 +1,6 @@
 import { ArrowRightAlt } from "@mui/icons-material";
 import "../Navbar/style.css";
+
 const index = () => {
   return (
     <>
@@ -38,7 +39,7 @@ const index = () => {
             <span className="gradient"></span>
             <span className="contactUs_label">
               CONTACT US{" "}
-              <span>
+              <span className="arrow_icon">
                 <ArrowRightAlt
                   style={{ fontSize: "16px", width: "16px", height: "16px" }}
                 />{" "}

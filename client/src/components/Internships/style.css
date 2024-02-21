@@ -1,0 +1,107 @@
+
+.internship_section{
+    height: 80vh;
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.single_internship_div{
+  
+    padding: 10px;
+    position: relative;
+    height: 10rem;
+    margin: 5px;
+    /* background-color: aqua; */
+  
+    /* justify-content: center; */
+}
+.internship_headings{
+    font-family: var(--jost);
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.internship_small{
+    font-family: var(--roboto);
+    color: rgb(177, 177, 177);
+    font-size: 0.8rem;
+    
+}
+.internship_logo{
+position: absolute;
+left: -10px;
+top: 3rem;
+z-index: 106;
+border: 1px solid var(--dark-blue);
+border-radius: 5px;
+padding: 5px;
+background-color: var(--light-blue);
+}
+
+  
+
+  
+  .internship_go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: var(--dark-blue);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .internship_go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .internship_card1 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    border-radius: 5px;
+
+    border: 1px solid var(--light-blue);
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .internship_card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: var(--dark-blue);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .internship_card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .internship_card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .internship_card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+ 

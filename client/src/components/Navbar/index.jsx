@@ -10,12 +10,12 @@ import {
   AccountCircle,
   ArrowRightAlt,
 } from "@mui/icons-material";
-const index = () => {
+const Index = () => {
   return (
     <nav className="nav_container">
       <div className="nav_container_top">
         <div className="nav_container_top_left">
-          <div>
+          <div className="hide_on_tablet">
             {" "}
             <span className="logo_span">
               <Phone
@@ -24,7 +24,7 @@ const index = () => {
             </span>{" "}
             <span>+91 8530636474</span>
           </div>
-          <div>
+          <div className="hide_on_tablet">
             {" "}
             <span className="logo_span">
               <Mail
@@ -33,7 +33,7 @@ const index = () => {
             </span>{" "}
             <span>hrmarsecplorationpvt@gmail.com</span>
           </div>
-          <div>
+          <div className="hide_on_tablet">
             {" "}
             <span className="logo_span">
               <AccessTime
@@ -42,6 +42,7 @@ const index = () => {
             </span>{" "}
             <span>Mon-Sat : 8:00 - 15:00</span>
           </div>
+
           <div>
             {" "}
             <span>Follow Us </span>
@@ -127,4 +128,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
