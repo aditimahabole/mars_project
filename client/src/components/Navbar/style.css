@@ -162,7 +162,7 @@
   height: 100px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
-  z-index: 200;
+  z-index: 1000;
 }
 /* -------------MEDIA QUERIES--------------- */
 /* For phones (up to 600px) */
