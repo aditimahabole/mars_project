@@ -86,7 +86,7 @@ const Index = () => {
                 ABOUT US
               </span>
               <h2>WELCOME TO MARS EXPLORATION</h2>
-              <p>
+              <p className="wrapped_text">
                 Welcome to MARS Exploration - the leading space edu tech company
                 in India. We offer online internships and training in the
                 exciting fields of aerospace, space, astronomy, and

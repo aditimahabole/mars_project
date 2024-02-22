@@ -5,6 +5,7 @@ import Introduction from '../Intro/index';
 import InternshipSection from '../Internships/index'
 import About from '../About/index'
 import PopularInternship from '../PopularInternship/index'
+import Youtube from '../Youtube/index'
 // import ShortNavbar from '../ShortNavbar/index';
 // Import the second navbar component
 
@@ -28,7 +29,7 @@ const Index = () => {
   }, []); // Run effect only once on component mount
 
   return (
-    <>
+    <section >
      {/* <ShortNavbar /> */}
       {scrolled ? <SecondNavbar /> : <Navbar />}
    
@@ -37,7 +38,8 @@ const Index = () => {
     
       <About/>
       <PopularInternship/>
-    </>
+      <Youtube />
+    </section>
   );
 };
 
