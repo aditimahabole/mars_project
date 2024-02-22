@@ -114,22 +114,12 @@
   position: relative;
 }
 
-.intro_left_div h1 {
-  margin: 0;
-  font-size: 35px;
-}
+
 
 .fadeInLeftAnimation {
   animation: fadeInLeft;
 }
 
-.intro_left_div p {
-  margin: 0;
-  font-size: 17px;
-  color: #b2b2b2;
-  line-height: 25px;
-  margin-top: 10px;
-}
 
 @keyframes fadeInLeft {
   from {
@@ -165,15 +155,17 @@
   font-weight: 800;
 }
 
-.text_in_blue {
+/* .text_in_blue {
   color: var(--dark-blue);
-}
+} */
 /* ------------------------------GET STARTED BUTTON---------------------- */
 .getstarted_button {
   font-size: 20px;
   padding: 20px 40px;
   font-weight: 700;
   background: var(--dark-blue);
+  background: rgb(200,218,255);
+background: linear-gradient(180deg, rgba(200,218,255,1) 0%, rgba(0,100,255,1) 100%);
   color: white;
   border: none;
   position: relative;
@@ -255,6 +247,29 @@
 
 .circle img {
   border-radius: 50%;
+}
+/*---------------------- INTRO HEADINGS--------------- */
+.intro_headings {
+  font-size: 35px;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(217, 217, 219, 0.768) 50%, rgba(251, 215, 5, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Hide the original text color */
+}
+
+.intro_left_div p {
+  margin: 0;
+  font-size: 17px;
+  color: #d6d4d4;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.text_in_blue{
+background: rgba(13, 0, 253, 0.479);
+background: var(--blue-gradient-bg);                             
+background-clip: text;
+-webkit-background-clip: text;
 }
 /* -----------------MEDIA QUERIES------------------------ */
 

@@ -4,6 +4,7 @@ import Navbar from '../Navbar/index';
 import Introduction from '../Intro/index';
 import InternshipSection from '../Internships/index'
 import About from '../About/index'
+import PopularInternship from '../PopularInternship/index'
 // import ShortNavbar from '../ShortNavbar/index';
 // Import the second navbar component
 
@@ -35,6 +36,7 @@ const Index = () => {
       <InternshipSection/>
     
       <About/>
+      <PopularInternship/>
     </>
   );
 };

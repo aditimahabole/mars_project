@@ -7,6 +7,9 @@
  --dark-blue : #0d5ef4;
  --dark-black:#0F2239;
  --white: #fff;
+ --light-grey:#dee0e3;
+ --blue-gradient-bg: linear-gradient(180deg, rgba(200,218,255,1) 0%, rgba(0,100,255,1) 100%);
+
 }
 /* font-family: "Roboto", sans-serif; */
 * 

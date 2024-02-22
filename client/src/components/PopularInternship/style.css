@@ -1,0 +1,107 @@
+/* transition: 0.4s ease-in-out; */
+.popular_internship_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+/* ----------------------SLIDER MAIN------------------- */
+.slider_main{
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  justify-content: space-around;
+  overflow-x: scroll;
+  padding: 20px 50px;
+}
+/* ------------------CARD CSS -------------------------- */
+.popular_internship_card{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 300px;
+  min-height: 200px;
+  font-family: var(--jost);
+  
+  padding: 0 30px;
+}
+.popular_internship_card_stars{
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.star_icon{
+  margin: 0 5px;
+  color: var(--dark-blue);
+  font-size: 0.5rem;
+  size: 5px;
+}
+.popular_internship_card_headings{
+  display: flex;
+  margin: 10px;
+}
+.pop_inter_head{
+  font-size: 19px;
+  font-family: var(--jost);
+  color: black;
+  font-weight: 500;
+}
+.pop_inter_head:hover{
+
+  color: var(--dark-blue);
+}
+.popular_internship_card_lesson{
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  margin: 10px;
+}
+.popular_internship_card_free{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-size: 1rem;
+  
+}
+.pop_inter_icons{
+
+  color: #bcbcbc;
+}
+.pop_inter_text{
+  font-size: 12px;
+  color: #bcbcbc;
+}
+.pop_inter_logo{
+  background-color: #5a18c2;
+  border-radius: 50%;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  
+
+}
+.pop_inter_logo_side_text{
+  font-size: 16px;
+  margin-left: 5px;
+}
+.pop_inter_logo_child1{
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+}
+.pop_inter_logo_child2{
+  /* background-color: rgb(16, 172, 86); */
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
