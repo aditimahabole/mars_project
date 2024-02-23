@@ -592,6 +592,8 @@
 }
 
 /* -----------------------------BUTTON---------------------------------------- */
+
+
 .about_more_button_container {
   display: flex;
   justify-content: space-between;
@@ -650,6 +652,9 @@
   width: 14em;
   height: 14em;
 }
+
+
+/* ------------------BUTTON END---------------------------- */
 /* ----------------------MEDIA QUERIES---------------------------- */
 @media only screen and (max-width: 300px) {
   .about_us_container {
@@ -730,6 +735,8 @@
   }
   .wrapped_text{
     max-width: 100%;
+    white-space: normal; 
+    word-wrap: break-word;
   }
 }
 

@@ -1,13 +1,15 @@
-import { useState, useEffect } from 'react';
-import SecondNavbar from '../SecondNavbar/index'
-import Navbar from '../Navbar/index';
-import Introduction from '../Intro/index';
-import InternshipSection from '../Internships/index'
-import About from '../About/index'
-import PopularInternship from '../PopularInternship/index'
-import Youtube from '../Youtube/index'
-// import ShortNavbar from '../ShortNavbar/index';
-// Import the second navbar component
+import { useState, useEffect } from "react";
+import SecondNavbar from "../SecondNavbar/index";
+import Navbar from "../Navbar/index";
+import Introduction from "../Intro/index";
+import InternshipSection from "../Internships/index";
+import About from "../About/index";
+import PopularInternship from "../PopularInternship/index";
+import Youtube from "../Youtube/index";
+import SpaceEducation from "../SpaceEducation/index";
+import Offer from "../Offer/index";
+import Expert from "../Experts/index";
+import UpcomingEvents from "../UpcomingEvents/index";
 
 const Index = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -20,26 +22,27 @@ const Index = () => {
     };
 
     // Add event listener to detect scroll
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Run effect only once on component mount
 
   return (
-    <section >
-     {/* <ShortNavbar /> */}
+    <>
       {scrolled ? <SecondNavbar /> : <Navbar />}
-   
       <Introduction />
-      <InternshipSection/>
-    
-      <About/>
-      <PopularInternship/>
+      <InternshipSection />
+      <About />
+      <PopularInternship />
       <Youtube />
-    </section>
+      <SpaceEducation />
+      <Offer />
+      <Expert />
+      <UpcomingEvents />
+    </>
   );
 };
 

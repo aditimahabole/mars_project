@@ -9,6 +9,16 @@
  --white: #fff;
  --light-grey:#dee0e3;
  --blue-gradient-bg: linear-gradient(180deg, rgba(200,218,255,1) 0%, rgba(0,100,255,1) 100%);
+ --title-color: #0F2239;
+ --body-color: #4D5765;
+ --smoke-color: #F3F7FB;
+ --black-color: #000000;
+ --white-color: #ffffff;
+ --light-color: #72849B;
+ --yellow-color: #FFB539;
+ --success-color: #28a745;
+ --error-color: #dc3545;
+ --border-color: #ecf1f9;
 
 }
 /* font-family: "Roboto", sans-serif; */
@@ -20,7 +30,7 @@
 body 
 {
   font-family: var(--roboto);
-  width: 100%;
+  /* width: 100%; */
 }
 
 html::-webkit-scrollbar {
@@ -50,5 +60,21 @@ html::-webkit-scrollbar-track {
 .slider_main::-webkit-scrollbar-thumb {
   background: var(--dark-blue);
   border-radius: 10px;
+ 
+}
+
+
+.event_div_slide::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.event_div_slide::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+ 
+}
+.event_div_slide::-webkit-scrollbar-thumb {
+  background: var(--dark-blue);
+  border-radius: 5px;
  
 }
