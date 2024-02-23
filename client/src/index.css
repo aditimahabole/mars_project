@@ -32,6 +32,28 @@ body
   font-family: var(--roboto);
   /* width: 100%; */
 }
+body ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: var(--dark-blue);
+  border-radius: 10px;
+ 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark-black)
+}
+
+
+
+
+
+
+
+
 
 html::-webkit-scrollbar {
   width: 10px;

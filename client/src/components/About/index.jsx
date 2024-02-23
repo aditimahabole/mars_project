@@ -10,8 +10,8 @@ import about_kid_head from "../../../public/assets/about_1_4.png";
 
 const Index = () => {
   return (
-    <div>
-      <section className="about_us">
+   
+      <div className="about_us">
         <div className="about_us_container">
           {/* --------------------------------LEFT PART----------------------- */}
           <div className="left_container">
@@ -86,7 +86,7 @@ const Index = () => {
                 ABOUT US
               </span>
               <h2>WELCOME TO MARS EXPLORATION</h2>
-              <p className="wrapped_text">
+              <p className="about_wrapped_text">
                 Welcome to MARS Exploration - the leading space edu tech company
                 in India. We offer online internships and training in the
                 exciting fields of aerospace, space, astronomy, and
@@ -171,8 +171,8 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+ 
   );
 };
 

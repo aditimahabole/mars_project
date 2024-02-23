@@ -28,6 +28,7 @@
 .space_education_section {
   /* padding: 50px 0 50px 0; */
   display: flex;
+  position: relative;
   /* background-color: yellow; */
   justify-content: center;
   align-items: center;
@@ -60,7 +61,7 @@
   min-height: 500px;
   overflow: hidden;
 
-  width: 50%;
+  width: 100%;
   z-index: 0;
 }
 /* -------------LEFT IMAGE BOX--------------- */
@@ -329,11 +330,29 @@
 }
 /* ----------------------MEDIA QUERIES---------------------------- */
 @media only screen and (max-width: 300px) {
-}
-@media only screen and (min-width: 301px) and (max-width: 600px) {
-}
 
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+}
+@media only screen and (min-width: 301px) and (max-width: 900px) {
+    .space_education_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .space_education_left_container{
+        width: 100%;
+        /* background-color: blue; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+     .space_education_right_container{
+        width: 90%;
+        /* background-color: rgb(13, 180, 10); */
+    }
+    .space_education_button_container{
+        /* background-color: #ffb539; */
+    }
 }
 
 @media only screen and (min-width: 901px) {

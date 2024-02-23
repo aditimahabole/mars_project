@@ -6,7 +6,7 @@ import leafy from '../../../public/assets/team-shape_1_1.png'
 
 const index = () => {
   return (
-    <section className="event_section">
+    <div className="event_section">
         <div className="leafy2">
         <img src={leafy} alt="." />
       </div>
@@ -77,7 +77,7 @@ const index = () => {
          
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

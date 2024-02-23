@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* background-color: pink; */
 }
 .single_internship_div {
   padding: 10px;

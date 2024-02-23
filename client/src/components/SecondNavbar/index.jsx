@@ -3,7 +3,7 @@ import "../Navbar/style.css";
 
 const index = () => {
   return (
-    <>
+    
       <div className="nav_container_bottom2">
         <div className="nav_container_bottom_left">
           <div>
@@ -48,7 +48,7 @@ const index = () => {
           </button>
         </div>
       </div>
-    </>
+   
   );
 };
 

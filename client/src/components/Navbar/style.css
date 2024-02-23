@@ -153,6 +153,7 @@
 
 /* ---------------NAVBAR 2------------------ */
 .nav_container_bottom2 {
+  max-width: 100vw;
   position: fixed;
   top: 0;
   left: 0; /* Optionally set left to 0 to ensure it's positioned from the left edge */

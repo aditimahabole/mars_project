@@ -134,3 +134,37 @@
     transition: 0.5s ease-in-out;
   
  }
+
+
+
+ /* ----------------------MEDIA QUERIES---------------------------- */
+@media only screen and (max-width: 300px) {
+
+
+}
+@media only screen and (min-width: 301px) and (max-width: 900px) {
+    .event_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .event_inner{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    .leafy2{
+        display: none;
+    }
+    .event_headings{
+        display: flex;
+        flex-direction: column;
+    }
+    
+ 
+}
+
+@media only screen and (min-width: 901px) {
+}

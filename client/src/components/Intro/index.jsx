@@ -59,7 +59,7 @@ const App = () => {
   const restOfText = words.slice(0, -2).join(" ");
 
   return (
-    <div className="background" style={backgroundStyle}>
+    <div className="background " style={backgroundStyle}>
       <div className="overlay"></div>
       <div className="cloudy_bg">
         <img className="cloudy_bg_size" src={cloudy_bg} alt="bg" />

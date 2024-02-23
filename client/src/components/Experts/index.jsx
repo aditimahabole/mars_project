@@ -10,7 +10,7 @@ import spiral from "../../../public/assets/team-shape_1_4.png";
 
 const index = () => {
   return (
-    <section className="experts_section">
+    <div className="experts_section">
       <div className="leafy">
         <img src={leafy} alt="." />
       </div>
@@ -97,7 +97,7 @@ const index = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

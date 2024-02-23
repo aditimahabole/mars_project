@@ -1,7 +1,8 @@
 import "./style.css"; // Import CSS file containing styles
 import image from "../../../public/assets/cta-icon1.png";
-import { ArrowRightAlt } from "@mui/icons-material";
+// import { ArrowRightAlt } from "@mui/icons-material";
 import image1 from "../../../public/assets/hero_bg_1_1.png";
+import Button from "../Offer/Button";
 
 const SlantedDiv = () => {
   return (
@@ -13,7 +14,8 @@ const SlantedDiv = () => {
         <div className="sl2">
           <h1>Get Online Internships</h1>
         </div>
-        <div className="youtube_button_container">
+        <Button  content="JOIN WITH US" color1="dark_blue" color2="white"/>
+        {/* <div className="youtube_button_container">
           <button className="youtube_button">
             <span className="youtube_transition"></span>
             <span className="youtube_gradient"></span>
@@ -30,7 +32,7 @@ const SlantedDiv = () => {
               </span>{" "}
             </span>
           </button>
-        </div>
+        </div> */}
       </div>
       <div className="slanted-right" style={{ objectFit: "cover" }}>
         <img src={image1} style={{ height: "100%", width: "100%"  , opacity:"0.5"}} />

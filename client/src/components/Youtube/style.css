@@ -11,7 +11,9 @@
 
   display: flex;
   align-items: center;
-  /* justify-content:space-evenly; */
+ 
+ 
+  justify-content:space-evenly;
   color: white;
   background-color: var(--dark-blue);
 
@@ -19,12 +21,11 @@
   /* clip-path: polygon( calc(100% - 30px) 100%, 0 100%, 0% 30px); */
   /* background: linear-gradient(120deg,  #007bff 80%,transparent 20%); */
 }
-.sl1 {
-  margin: 0 30px;
+.sl1 ,.sl2{
+  margin: 0 10px;
+  /* background-color: orange; */
 }
-.sl2 {
-  margin: 0 30px;
-}
+
 
 .slanted-right {
   right: 0;
@@ -173,6 +174,7 @@
     position: relative;
     flex-direction: column;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .youtube_button_container{
     position: relative;

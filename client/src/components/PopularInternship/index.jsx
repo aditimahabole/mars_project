@@ -6,7 +6,7 @@ import Card from './Card'
 
 const Slider = () => {
   return (
-    <section className='popular_internship_section'>
+    <div className='popular_internship_section'>
       <div className="popular_internship_container">
         <div className="popular_internship_header">
           <div className="our_popular_internship">
@@ -45,19 +45,24 @@ const Slider = () => {
 
           </div>
         </div>
-        <div className='slider_main'>
-        
-   
-          <Card Title={"Aerospace Vehicle Design Internship"} />
+
+        <div className='pop_inter_slider_div'>
+        <div  className="pop_div_slide" >
+        <Card Title={"Aerospace Vehicle Design Internship"} />
           <Card Title={'Finite Element Analysis Internship'} />
           <Card Title={'Drone Manufacturing Internship'} />
           <Card Title={'Reusable Launch Vehicles Internship'} />
           <Card Title={'Unmanned Aerial Vehicle Internship'} />
           <Card Title={'Rocket Propulsion Internship'} />
           
+
+          </div>
+        
+   
+         
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 export default Slider

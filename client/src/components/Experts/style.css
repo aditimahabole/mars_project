@@ -47,7 +47,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     /* background-color: rgb(227, 147, 27); */
-    padding: 20px;
+    padding: 1.25rem;
     height: 100%;
     color: white;
 }
@@ -99,7 +99,7 @@
   .experts_right_container_text span {
    
     font-family: var(--jost);
-  font-size: 16px;
+  font-size: 1rem;
   color: rgb(13, 94, 244);
   font-weight: 500;
   margin: -6.56px 0 22px 0;
@@ -107,21 +107,78 @@
   }
   .experts_right_container_text h2 {
     font-family: var(--jost);
-  font-size: 44px;
+  font-size:2.75rem;
   color: white;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom:0.938rem;
   }
   .experts_right_container_text  p{
     font-family: var(--roboto);
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(222, 222, 222, 0.892);
     font-weight: 400;
-    margin-bottom: 18px;
-    letter-spacing: 0.5px;
+    margin-bottom: 1.125rem;
+    letter-spacing: 0.031rem;
     line-height: 1.5;
 
   }
 .expert_card_style{
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
+/* -------------MEDIA QUERIES-------------- */
+/* ------------MEDIA QUERIES------------------- */
+@media only screen and (max-width: 300px) {
+
+    .experts_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .experts_section_inner{
+    display: flex;
+    flex-direction: column;
+   
+   }
+   .leafy , .spiral{
+    display: none;
+   }
+   .experts_section_inner_l{
+    margin-top: 1.25rem;
+   }
+  }
+  @media only screen and (min-width: 301px) and (max-width: 900px) {
+   
+    .experts_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .experts_section_inner{
+        display: flex;
+        flex-direction: column;
+       }
+       .experts_section_inner_l_main{
+        width: 100%;
+    }
+    .leafy , .spiral{
+        display: none;
+       }
+       .experts_section_inner_l{
+        margin-top: 1.25rem;
+       }
+       .experts_section_inner_r{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+       }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    
+  }
+  
+  @media only screen and (min-width: 901px) {
+  }
+  

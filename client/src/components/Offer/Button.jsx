@@ -14,6 +14,18 @@ const StyledButtonContainer = styled.div`
   //   color: red; // Change text color on hover
   //   // color: ${props => props.textColor}; // Change text color on hover
   // }
+
+  @media only screen and (max-width: 300px) {
+    padding:5px;
+    font-size:1rem;
+    z-index: 100;
+  }
+
+  @media only screen and (min-width: 301px) and (max-width: 900px) {
+    padding:5px;
+    font-size:1rem;
+    z-index: 100;
+  }
 `;
 
 
@@ -72,6 +84,21 @@ const StyledButton = styled.button`
     height: 14em;
   }
 
+
+  @media only screen and (max-width: 300px) {
+    padding:5px;
+    font-size:1rem;
+ 
+    font-family:var(--jost);
+  }
+
+  @media only screen and (min-width: 301px) and (max-width: 900px) {
+    padding:5px;
+    font-size:1rem;
+ 
+    font-family:var(--jost);
+  }
+
 `;
 
 const StyledLabel = styled.span`
@@ -84,6 +111,20 @@ const StyledLabel = styled.span`
   // &:hover {
   //   color: initial; // Reset color on hover
   // }
+
+  @media only screen and (max-width: 300px) {
+    padding:5px;
+    font-size:1rem;
+    z-index:2;
+    font-family:var(--jost);
+  }
+
+  @media only screen and (min-width: 301px) and (max-width: 900px) {
+    padding:5px;
+    font-size:1rem;
+    z-index:2;
+    font-family:var(--jost);
+  }
 `;
 
 const Button = ({ content, color1, color2 }) => {
