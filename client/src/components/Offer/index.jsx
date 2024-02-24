@@ -101,31 +101,17 @@ const index = () => {
             </span>
           </button>
         </div> */}
-        <div style={{ display: "flex" }}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Button content="JOIN WITH US" color1="dark_blue" color2="white" />
-          </div>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+        <div style={{ display: "flex", justifyContent:"space-around" }}>
+          
+            <Button content="JOIN WITH US" color1="--dark-blue" color2="--red1"  text="--light-white"/>
+        
+        
             <Button
               content="BECOME A TRAINER"
-              color1="dark_black"
-              color2="white"
+              color1="--dark-blue"
+              color2="--red1"
             />
-          </div>
+         
         </div>
       </div>
     </div>

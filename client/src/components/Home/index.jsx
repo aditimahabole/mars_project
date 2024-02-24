@@ -10,6 +10,11 @@ import SpaceEducation from "../SpaceEducation/index";
 import Offer from "../Offer/index";
 import Expert from "../Experts/index";
 import UpcomingEvents from "../UpcomingEvents/index";
+import TrustedUniversity from "../TrustedUniversity/index";
+import Box from "../Box/index";
+import Testimonial from "../Testimonial/index";
+import Blog from "../Blog/index";
+import Footer from "../Footer/index";
 
 const Index = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -42,6 +47,11 @@ const Index = () => {
       <Offer />
       <Expert />
       <UpcomingEvents />
+      <TrustedUniversity/>
+      <Box/>
+      <Testimonial/>
+      <Blog/>
+      <Footer/>
     </>
   );
 };

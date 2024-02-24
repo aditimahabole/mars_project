@@ -52,11 +52,8 @@ const index = () => {
                   justifyContent: "left",
                 }}
               >
-                <Button
-                  content="EXPLORE COURSES"
-                  color1="dark_blue"
-                  color2="white"
-                />
+              
+                 <Button content="EXPLORE COURSES" color1="--red1" color2="--dark-black"  text="--light-white"/>
               </div>
 
               <div
@@ -67,7 +64,8 @@ const index = () => {
                   justifyContent: "left",
                 }}
               >
-                <Button content="JOIN AS TRAINER" color1="red" color2="white" />
+                
+                <Button content="JOIN AS TRAINER" color1="--dark-blue" color2="--dark-black"  text="--light-white"/>
               </div>
             </div>
           </div>

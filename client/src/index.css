@@ -1,13 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
+  --blue1 : rgb(13,94,244);
+  --blue1bg :linear-gradient(180deg, rgba(13,94,244,1) 0%, rgba(110,159,248,1) 100%);
+  --red1 :rgb(242,15,16);
+  --red1bg : linear-gradient(180deg, rgba(242,15,16,1) 0%, rgba(247,101,102,1) 100%);
+ --roboto:"Roboto", sans-serif;
  --roboto:"Roboto", sans-serif;
  --jost: "Jost", sans-serif;
  --light-blue:#ebf2ff;
  --dark-blue : #0d5ef4;
+ --empty : transparent;
  --dark-black:#0F2239;
- --white: #fff;
- --light-grey:#dee0e3;
+ --light-white: #ffffff;
+ --light-grey:#c2c4c7;
  --blue-gradient-bg: linear-gradient(180deg, rgba(200,218,255,1) 0%, rgba(0,100,255,1) 100%);
  --title-color: #0F2239;
  --body-color: #4D5765;

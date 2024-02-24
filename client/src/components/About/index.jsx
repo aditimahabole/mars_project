@@ -1,10 +1,11 @@
 import "./style.css";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { ArrowRightAlt } from "@mui/icons-material";
+// import { ArrowRightAlt } from "@mui/icons-material";
 import about_img from "../../../public/assets/about_1_1.png";
 import about_img2 from "../../../public/assets/about_1_2.png";
 import floating_book from '../../../public/assets/about_1_shape1.png'
+import Button from "../Offer/Button";
 
 import about_kid_head from "../../../public/assets/about_1_4.png";
 
@@ -151,7 +152,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="about_more_button_container">
+            {/* <div className="about_more_button_container">
               <button className="about_us_button">
                 <span className="transition"></span>
                 <span className="gradient"></span>
@@ -168,7 +169,8 @@ const Index = () => {
                   </span>{" "}
                 </span>
               </button>
-            </div>
+            </div> */}
+            <Button content="ABOUT US" color1="--dark-blue" color2="--dark-black"  text="--light-white"/>
           </div>
         </div>
       </div>
