@@ -87,18 +87,19 @@ hr{
 .footer_bottom_inner_top{
     /* background-color: yellow; */
     display: flex;
-    padding: 40px;
+    padding: 30px;
     
 }
 .foot4_div{
     /* background-color: pink; */
-    margin: 5px;
+    /* margin: 5px; */
     flex: 1  ; /* flex-grow flex-shrink flex-basis flex-grow */
-    min-height: 400px;
+    max-height: 400px;
     color: #AFBCCF;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
+    /* min-width: 300px; */
   
 
 

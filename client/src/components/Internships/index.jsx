@@ -7,15 +7,17 @@ import img4 from "../../../public/assets/cat-1_4.svg";
 import { useState } from "react";
 
 const Index = () => {
-  const [space, setSpace] = useState(false);
+  const [space, setSpace] = useState(true);
   const [astronomy, setAstronomy] = useState(false);
   const [aerospace, setAerospace] = useState(false);
   const [mechanical, setMechanical] = useState(false);
   const [computer, setComputer] = useState(false);
   const [eletronic, setElectronic] = useState(false);
+  const [activeButton, setActiveButton] = useState("space");
 
   const handleTopic = (topic) => {
     console.log(topic);
+    setActiveButton(topic);
     if (topic === "space") {
       setSpace(true);
       setAstronomy(false);
@@ -60,6 +62,16 @@ const Index = () => {
       setElectronic(true);
     }
   };
+
+  const [startIndex, setStartIndex] = useState(0);
+
+  const handleClickNext = () => {
+    setStartIndex((prevIndex) => Math.min(prevIndex + 1, 4 - 1));
+  };
+
+  const handleClickPrev = () => {
+    setStartIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+  };
   return (
     <div className="internship_main_section">
       <div className="internship_section_heading">
@@ -69,7 +81,9 @@ const Index = () => {
         <div className="internship_section_top_buttons">
           <div className="internship_section_button_div">
             <button
-              className="internship_section_button"
+              className={`internship_section_button ${
+                activeButton === "space" ? "active" : ""
+              }`}
               onClick={() => handleTopic("space")}
             >
               Space Engineering
@@ -77,7 +91,9 @@ const Index = () => {
           </div>
           <div className="internship_section_button_div">
             <button
-              className="internship_section_button"
+              className={`internship_section_button ${
+                activeButton === "astronomy" ? "active" : ""
+              }`}
               onClick={() => handleTopic("astronomy")}
             >
               Astronomy & Astrophysics
@@ -85,7 +101,9 @@ const Index = () => {
           </div>
           <div className="internship_section_button_div">
             <button
-              className="internship_section_button"
+              className={`internship_section_button ${
+                activeButton === "aerospace" ? "active" : ""
+              }`}
               onClick={() => handleTopic("aerospace")}
             >
               Aeronautical / Aerospace Engineering
@@ -93,7 +111,9 @@ const Index = () => {
           </div>
           <div className="internship_section_button_div">
             <button
-              className="internship_section_button"
+              className={`internship_section_button ${
+                activeButton === "mechanical" ? "active" : ""
+              }`}
               onClick={() => handleTopic("mechanical")}
             >
               Mechanical Engineering
@@ -102,7 +122,9 @@ const Index = () => {
 
           <div className="internship_section_button_div">
             <button
-              className="internship_section_button"
+              className={`internship_section_button ${
+                activeButton === "computer" ? "active" : ""
+              }`}
               onClick={() => handleTopic("computer")}
             >
               Computer Engineering
@@ -110,7 +132,9 @@ const Index = () => {
           </div>
           <div className="internship_section_button_div">
             <button
-              className="internship_section_button"
+              className={`internship_section_button ${
+                activeButton === "electronic" ? "active" : ""
+              }`}
               onClick={() => handleTopic("electronic")}
             >
               Electronic & Telecommunication Engineering
@@ -119,8 +143,7 @@ const Index = () => {
         </div>
       </div>
       <div className="internship_bottom_items">
-        {space &&
-         (
+        {space && (
           <div className="internship_bottom_box">
             <div className="single_internship_div">
               <Internship
@@ -150,13 +173,9 @@ const Index = () => {
               />
             </div>
           </div>
-        )
-        
-        }
-        {astronomy && 
-         (
+        )}
+        {astronomy && (
           <div className="internship_bottom_box">
-           
             <div className="single_internship_div">
               <Internship
                 image={img2}
@@ -176,69 +195,188 @@ const Index = () => {
               />
             </div>
           </div>
-        )
-        
-        
-        }
-        {aerospace && "aerospace"}
-        {mechanical && "M"}
-        {computer && "C"}
-        {eletronic && "elect"}
+        )}
+        {aerospace && (
+          <div className="internship_bottom_box">
+            <div className="single_internship_div">
+              <Internship
+                image={img2}
+                heading="Space Engineering"
+                status="Upcoming Internships"
+                star={4}
+                para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
+              />
+            </div>
+            <div className="single_internship_div">
+              <Internship
+                image={img4}
+                heading="Space Engineering"
+                status="Upcoming Internships"
+                star={3}
+                para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
+              />
+            </div>
+          </div>
+        )}
+        {mechanical && (
+          <div className="internship_bottom_box">
+            <div className="single_internship_div">
+              <Internship
+                image={img2}
+                heading="Mechanical Engineering"
+                status="Upcoming Internships"
+                star={4}
+                para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
+              />
+            </div>
+            <div className="single_internship_div">
+              <Internship
+                image={img4}
+                heading="Mechanical Engineering"
+                status="Upcoming Internships"
+                star={3}
+                para="You will learn about mechanical engineering"
+              />
+            </div>
+          </div>
+        )}
+        {computer && (
+          <div className="pop_inter_slider_div">
+            <div className="slider-container">
+              <div className="slider_button_div">
+                <div>
+                  <button
+                    className="slider-button prev"
+                    onClick={handleClickPrev}
+                  >
+                    {" "}
+                    &lt;
+                  </button>
+                </div>
+                <div>
+                  <button
+                    className="slider-button next"
+                    onClick={handleClickNext}
+                  >
+                    {" "}
+                    &gt;
+                  </button>
+                </div>
+              </div>
+              <div
+                className="slider-items"
+                style={{ transform: `translateX(-${startIndex * 25}%)` }}
+              >
+                <div className="internship_bottom_box">
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img2}
+                      heading="Machine Learning"
+                      status="Upcoming Internships"
+                      star={4}
+                      para="Learn Machine Learning and Deep Learning"
+                    />
+                  </div>
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img2}
+                      heading="Software Engineering"
+                      status="Upcoming Internships"
+                      star={4}
+                      para="Learn about software development methodologies and practices"
+                    />
+                  </div>
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img2}
+                      heading="Mobile App Development"
+                      status="Upcoming Internships"
+                      star={4}
+                      para="Create mobile applications for iOS and Android platforms"
+                    />
+                  </div>
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img1}
+                      heading="Database Management"
+                      status="Upcoming Internships"
+                      star={3}
+                      para="Master the concepts of database design and management systems"
+                    />
+                  </div>
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img1}
+                      heading="Cloud Computing"
+                      status="Upcoming Internships"
+                      star={4}
+                      para="Explore cloud infrastructure and services offered by leading providers"
+                    />
+                  </div>
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img3}
+                      heading="Cybersecurity"
+                      status="Upcoming Internships"
+                      star={4}
+                      para="Learn about cybersecurity threats and countermeasures"
+                    />
+                  </div>
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img3}
+                      heading="Web Development"
+                      status="Upcoming Internships"
+                      star={5}
+                      para="Explore modern web development technologies and frameworks"
+                    />
+                    <div className="single_internship_div">
+                      <Internship
+                        image={img4}
+                        heading="Data Science"
+                        status="Upcoming Internships"
+                        star={4}
+                        para="Dive into the world of data science and analytics"
+                      />
+                    </div>
+                  </div>
+                  <div className="single_internship_div">
+                    <Internship
+                      image={img4}
+                      heading="Web Development"
+                      status="Upcoming Internships"
+                      star={3}
+                      para="Learn web dev from scratch"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>{" "}
+          </div>
+        )}
+        {eletronic && (
+          <div className="internship_bottom_box">
+            <div className="single_internship_div">
+              <Internship
+                image={img2}
+                heading="Electronics"
+                status="Upcoming Internships"
+                star={3}
+                para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
+              />
+            </div>
+            <div className="single_internship_div">
+              <Internship
+                image={img4}
+                heading="Electronics"
+                status="Upcoming Internships"
+                star={4}
+                para="Electronics and communication internship"
+              />
+            </div>
+          </div>
+        )}
       </div>
-
-      {/* <div className="internship_section">
-        <div className="single_internship_div">
-          <Internship
-            image={img1}
-            heading="Space Engineering"
-            status="Upcoming Internships"
-            url="/space-engineering"
-          />
-        </div>
-        <div className="single_internship_div">
-          <Internship
-            image={img2}
-            heading="Astronomy & Astrophysics"
-            status="Upcoming Internships"
-            url="/upcoming-internships"
-          />
-        </div>
-        <div className="single_internship_div">
-          <Internship
-            image={img4}
-            heading="Aeronautical / Aerospace Engineering"
-            status="9+ Internship"
-            url="/aerospace-engineering"
-          />
-        </div>
-        <div className="single_internship_div">
-          <Internship
-            image={img3}
-            heading="Mechanical Engineering"
-            status="56+ Courses"
-            url="/mechanical-engineering"
-          />
-        </div>
-        <div className="single_internship_div">
-          <Internship
-            image={img3}
-            heading="Computer Engineering"
-            status="56+ Courses"
-            url="/computer-engineering"
-          />
-        </div>
-
-       
-       
-        <div className="single_internship_div">
-          <Internship
-            image={img3}
-            heading="Electronic & Telecommunication Engineering"
-            status="56+ Courses"
-            url="/electronic-engineering"
-          />
-        </div>
-      </div> */}
     </div>
   );
 };

@@ -26,7 +26,7 @@ const Slider = () => {
             <h2>Latests News & Blogs</h2>
           </div>
           <div className="view_all_courses">
-           <Button color1='--dark-blue' color2='--dark-black' text='--white' content='VIEW ALL COURSES' />
+           <Button color1='--dark-blue' color2='--dark-black' text='--white' content='VIEW BLOGS' />
 
           </div>
         </div>

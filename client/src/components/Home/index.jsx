@@ -16,6 +16,8 @@ import Box from "../Box/index";
 import Testimonial from "../Testimonial/index";
 import Blog from "../Blog/index";
 import Footer from "../Footer/index";
+import Quality from "../QualitySkills/index"
+import Course from "../PickCourse/index"
 
 const Index = () => {
   // const [scrolled, setScrolled] = useState(false);
@@ -50,6 +52,7 @@ const Index = () => {
       <Introduction />
       <Partners/>
       <InternshipSection />
+      <Course/>
       <About />
       <PopularInternship />
       <Youtube />
@@ -61,6 +64,7 @@ const Index = () => {
       <Box/>
       <Testimonial/>
       <Blog/>
+      <Quality/>
       <Footer/>
     </>
   );

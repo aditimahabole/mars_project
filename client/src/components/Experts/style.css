@@ -30,6 +30,9 @@
       transform: rotate(360deg); /* End angle */
     }
   }
+
+
+  
   @keyframes floatAnimation {
     0% {
       transform: translateY(0);

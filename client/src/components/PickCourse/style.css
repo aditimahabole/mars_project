@@ -1,12 +1,31 @@
-.internship_main_section{
-  background-color: rgb(210, 229, 250);
+.course_main_section {
+  background-color: rgb(6, 42, 81);
   padding: 30px 0px;
   min-height: 100vh;
-  color: var(--dark-black);
-
+  position: relative;
 }
 
+.gol1 {
+  top: 20px;
+  left: 10%;
+  position: absolute;
+  animation: rotateAnimation 5s infinite linear;
+}
 
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg); /* Start angle */
+  }
+  to {
+    transform: rotate(360deg); /* End angle */
+  }
+}
+.gol2 {
+  top: 20px;
+  right: 10%;
+  position: absolute;
+  animation: rotateAnimation 5s infinite linear;
+}
 
 /* --------------------TOPIC SECTION------------------------- */
 .internship_section {
@@ -14,20 +33,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
 }
 
-.internship_section_top_buttons{
+.internship_section_top_buttons {
   /* background-color: yellow; */
   display: flex;
 }
 
-
-
-.internship_section_button_div{
+.internship_section_button_div {
   /* background-color: pink; */
 }
-.internship_section_button{
+.internship_section_button {
   background-color: var(--dark-blue);
   padding: 10px;
   border: none;
@@ -35,30 +51,32 @@
   color: white;
   margin: 5px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
-.internship_section_button:hover{
+.internship_section_button:hover {
   background-color: var(--dark-black);
 }
 /* -----------------BOTTOM------------------------------ */
-.internship_bottom_items{
+.internship_bottom_items {
   /* background-color: green; */
   /* min-height: 100px; */
   height: 100%;
-  padding: 20px;
+  padding: 30px;
 }
-.internship_bottom_box{
+.course_bottom_box {
   display: flex;
-  /* background-color: greenyellow; */
+  /* background-color: rgb(252, 0, 164); */
   justify-content: flex-start;
+  width: 80%;
+  /* overflow: hidden; */
 
   height: 100%;
   min-height: 70vh;
   /* overflow-x: scroll; */
-
 }
 /* ----------------------------------------------------------- */
-.ilogo{
+.ilogo {
   /* background-color: orange; */
   padding: 10px;
 }
@@ -69,7 +87,6 @@
   margin: 5px;
   /* flex: 1; */
   /* background-color: orange; */
-  
 }
 /* ---------CARD----------- */
 .internship_card1 {
@@ -85,15 +102,11 @@
   overflow: hidden;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
 }
-
 
 /* ------------------------INTER BOTTOM TEXT--------------------- */
 
-
-
-.internship_bottom_text{
+.internship_bottom_text {
   /* background-color: rgb(255, 0, 38); */
   padding: 10px;
   display: flex;
@@ -102,43 +115,42 @@
   /* height: 100%; */
   /* flex: 1; */
 }
-.inter_text_div{
+.inter_text_div {
   margin: 5px 0px;
   /* background-color: blue; */
   padding: 5px 0px;
   display: flex;
   justify-content: flex-start;
 }
-.inter_status{
+.inter_status {
   background-color: rgb(209, 242, 250);
   color: var(--dark-blue);
   border-radius: 5px;
   font-size: 0.7rem;
   padding: 5px;
 }
-.inter_heading{
+.inter_heading {
   font-size: 1.1rem;
   font-weight: 600;
 }
-.inter_para{
+.inter_para {
   font-size: 0.8rem;
   /* font-weight: 600; */
 }
 /* ----------------------------------------------------------------- */
 
-.internship_section_heading{
+.course_section_heading {
   /* background-color: orange; */
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.internship_section_heading_h1{
+.internship_section_heading_h1 {
   font-size: 36px;
   font-family: var(--jost);
-
 }
-.active{
+.active {
   background-color: var(--dark-black);
 }
 .internship_headings {
@@ -151,16 +163,15 @@
   font-family: var(--roboto);
   color: rgb(177, 177, 177);
   font-size: 0.8rem;
-  
 }
 .internship_logo {
- /* background-color: pink; */
- padding: 10px;
- height: 100px;
- display: flex;
- align-items: center;
- justify-content: center;
- object-fit: cover;
+  /* background-color: pink; */
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
 }
 
 .internship_go-corner {
@@ -183,10 +194,6 @@
   color: white;
   font-family: courier, sans;
 }
-
-
-
-
 
 /* ---------------SLIDER --------------------- */
 .slider-container {

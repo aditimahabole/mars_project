@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import UserIcon from "@mui/icons-material/AccountCircle";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import Button from "../Offer/Button";
 
 const CardComponent = ({ by_person, time, topic, image }) => {
   return (
@@ -48,12 +49,13 @@ const CardComponent = ({ by_person, time, topic, image }) => {
           <h3 className="blog_card_right_h3">{topic} </h3>
         </div>
         <div>
-          <button className="learn-more">
+          <Button  content="VIEW BLOG" color1="--dark-blue" color2="--dark-black" />
+          {/* <button className="learn-more">
             <span className="learn-more-circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
             <span className="learn-more-button-text">Learn More</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

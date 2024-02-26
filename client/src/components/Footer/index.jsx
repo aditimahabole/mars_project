@@ -6,8 +6,8 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { MailOutlined } from "@mui/icons-material";
-import Button from "../Offer/Button";
+// import { MailOutlined } from "@mui/icons-material";
+// import Button from "../Offer/Button";
 const Index = () => {
   return (
     <div className="footer_section">
@@ -144,92 +144,130 @@ const Index = () => {
             </div>
             <div className="foot4_div">
               <div className="foot4_div_box">
-                <h2 className="f_head">Quick Links</h2>
+                <h2 className="f_head">Useful Links</h2>
                 <ul className="f_ul">
                   <li>
-                    <a> Space Engineering</a>
+                    <a> Home</a>
                   </li>
                   <li>
-                    <a> Data Science</a>
+                    <a>About Us</a>
                   </li>
                   <li>
-                    <a> Space Engineering</a>
+                    <a> Program</a>
                   </li>
                   <li>
-                    <a> Mechanical Engineering</a>
+                    <a> Blog</a>
                   </li>
                   <li>
-                    <a> Photography</a>
+                    <a> Career</a>
+                  </li>
+                  <li>
+                    <a> Contact Us</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="foot4_div">
               <div className="foot4_div_box">
-                <h2 className="f_head">Resources</h2>
+                <h2 className="f_head">Programs</h2>
                 <ul className="f_ul">
                   <li>
-                    <a> Community</a>
+                    <a>Training Internship</a>
                   </li>
                   <li>
-                    <a> Support</a>
+                    <a>Skill Development Training</a>
                   </li>
                   <li>
-                    <a> Video Guides</a>
+                    <a>Research Training</a>
                   </li>
                   <li>
-                    <a>Documentation</a>
+                    <a>Graduate Trainee</a>
                   </li>
                   <li>
-                    <a> Security</a>
+                    <a>IIRS- ISRO Outreach</a>
                   </li>
                   <li>
-                    <a>Template</a>
+                    <a>Campus ambassador</a>
+                  </li>
+                  <li>
+                    <a>Scholarship program</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="foot4_div">
+              <div className="foot4_div_box">
+                <h2 className="f_head">Category</h2>
+               
+
+               
+                <ul className="f_ul">
+                  <li>
+                    <a>Students Sign-up/ Login</a>
+                  </li>
+                  <li>
+                    <a>Tutor Sign-up/Login</a>
+                  </li>
+                  <li>
+                    <a>Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a>Terms and Conditions</a>
+                  </li>
+                  <li>
+                    <a>Cancellation and Refund Policy</a>
+                  </li>
+                </ul>
+
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="foot4_div">
               <div className="foot4_div">
                 <div className="foot4_div_box">
                   <h2 className="f_head">Get in touch!</h2>
                   <p>
                     Subscribe our newsletter to get our latest Update & news
                   </p>
-                  <div className="input_div_footer" style={{display:"flex" ,alignItems:"center" ,border:"1px solid var(--dark-blue)" , padding:"20px 5px" }}>
-                    <input className="f_input" type="text" placeholder="Enter Your Email" />
-                    <MailOutlined 
+                  <div
+                    className="input_div_footer"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      border: "1px solid var(--dark-blue)",
+                      padding: "20px 5px",
+                    }}
+                  >
+                    <input
+                      className="f_input"
+                      type="text"
+                      placeholder="Enter Your Email"
+                    />
+                    <MailOutlined
                       style={{
                         fontSize: "16px",
                         width: "16px",
                         height: "16px",
                         marginLeft: "5px",
-                        color:"var(--dark-blue)"
-                      }}/>
-
+                        color: "var(--dark-blue)",
+                      }}
+                    />
                   </div>
                   <div className="foot_bt_div">
-                  <Button content="SUBSCRIBE" color1="--dark-blue" color2="--light-grey" text="--white" />
-
+                    <Button
+                      content="SUBSCRIBE"
+                      color1="--dark-blue"
+                      color2="--light-grey"
+                      text="--white"
+                    />
                   </div>
-
-               
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
-
-
-
           <hr style={{ backgroundColor: "#AFBCCF", color: "#AFBCCF" }}></hr>
-
-
-
-
-
-
-          
 
           <div className="footer_bottom_inner_bottom">
             <div>
@@ -242,7 +280,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
