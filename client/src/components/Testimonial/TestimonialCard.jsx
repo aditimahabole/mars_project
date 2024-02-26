@@ -24,6 +24,9 @@ const Card = ({ image, para, name, designation, star }) => {
     
         return stars;
       };
+
+
+      
   return (
     <div className="testimonial_card">
       <div className="testimonial_triangle"></div>

@@ -1,6 +1,6 @@
 .card {
-    width: 350px;
-    height: 400px;
+    width:250px;
+    height: 300px;
     transition: all .5s;
     box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
                -15px -15px 30px rgba(60, 60, 60, 0.082);
@@ -11,7 +11,7 @@
   }
   
   .card:hover {
-    height: 600px;
+    height: 500px;
     /* background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%); */
   }
   
