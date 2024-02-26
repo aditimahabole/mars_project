@@ -82,7 +82,7 @@ const Index = () => {
                 style={{ fontSize: "17px", width: "17px", height: "17px" }}
               />
             </span>{" "}
-            Student Login/Signup
+            Login/Signup
           </button>
         </div>
       </div>
