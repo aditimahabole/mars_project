@@ -170,7 +170,7 @@ const Index = () => {
                 </span>
               </button>
             </div> */}
-            <Button content="ABOUT US" color1="--dark-blue" color2="--dark-black"  text="--light-white"/>
+            <Button content="READ MORE" color1="--dark-blue" color2="--dark-black"  text="--light-white"/>
           </div>
         </div>
       </div>

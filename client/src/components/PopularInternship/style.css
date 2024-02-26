@@ -1,38 +1,22 @@
 /* transition: 0.4s ease-in-out; */
 .popular_internship_section{
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 30px; */
-  /* padding: 120px 0 120px 0; */
-  /* background-color: rgb(220, 220, 220); */
+ 
   background-color: rgb(231, 239, 250);
-  /* max-width: 100%; */
-  min-height: 100vh;
-  /* background-color: #e9f0fa; */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   margin-top: 3.125rem;
+  overflow: hidden;
 }
 .popular_internship_container{
-  /* max-width: 1140px; */
-  /* overflow-x: scroll; */
-  /* display: flex;
-  
-  position: relative;
-  flex-direction: column;
-  justify-content: center;  */
-
-
-  /* padding: 30px; */
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  /* background-color: yellow; */
+  /* background-color: rgb(16, 184, 210); */
+  padding: 20px;
 }
 
 
@@ -79,10 +63,10 @@
   padding-left: 0px;
   padding-top: 20px;
   z-index: 100;
-  /* background-color: #5a18c2; */
+  /* background-color: #ec990a; */
 }
 
-.view_all_courses_button {
+/* .view_all_courses_button {
   font-size: 16px;
   padding: 20px 20px;
   font-weight: 500;
@@ -129,19 +113,19 @@
 .view_all_courses_button:hover .transition {
   width: 14em;
   height: 14em;
-}
+} */
 
 
 /* ------------------CARD CSS -------------------------- */ 
 .popular_internship_card{
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  margin: 20px 20px;
+  margin: 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   min-width: 300px;
-  min-height: 200px;
+  min-height: 350px;
   font-family: var(--jost);
   
   padding: 0 30px;
@@ -149,7 +133,7 @@
 .popular_internship_card_stars{
   display: flex;
   justify-content: flex-start;
-  margin: 10px;
+  margin: 5px;
 }
 .star_icon{
   margin: 0 5px;
@@ -157,17 +141,36 @@
   font-size: 0.5rem;
   size: 5px;
 }
-.popular_internship_card_headings{
+.popular_internship_card_heading{
   display: flex;
-  margin: 10px;
+  /* background-color: brown; */
+  /* padding: 20px; */
+  justify-content: space-between;
+
+  /* margin: 10px; */
 }
-.pop_inter_head{
+.pop_inter_head_img{
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.pop_inter_head1{
   font-size: 19px;
   font-family: var(--jost);
   color: black;
   font-weight: 500;
+  /* background-color: yellow; */
+  width: 60%;
 }
-.pop_inter_head:hover{
+.pop_inter_head2{
+  width: 40%;
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pop_inter_head1:hover{
 
   color: var(--dark-blue);
 }
@@ -175,13 +178,15 @@
   display: flex;
   justify-content: space-around;
   font-size: 12px;
-  margin: 10px;
+  /* margin: 10px; */
+  /* background-color: papayawhip; */
 }
 .popular_internship_card_free{
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  /* margin: 10px; */
   font-size: 1rem;
+  /* background-color: aquamarine; */
   
 }
 .pop_inter_icons{
@@ -218,7 +223,7 @@
 }
 .pop_inter_logo_child2{
   /* background-color: rgb(16, 172, 86); */
-  width: 25%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,9 +234,11 @@
   display: flex;
   /* align-items: center; */
   width: 100%;
+  flex-direction: column;
   /* background-color: greenyellow; */
-  margin-top: 10%;
+
 }
+
 .pop_div_slide{
   width: 100%;
   display: flex;
@@ -240,6 +247,57 @@
   /* background-color: paleturquoise; */
 
 }
+
+
+/* ---------------SLIDER --------------------- */
+.slider-container {
+  /* position: relative; */
+  overflow: hidden;
+  /* background-color: aquamarine; */
+}
+
+.slider-items {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider-item {
+  width: 25%; /* Each card takes up 25% of the container width */
+}
+
+.slider_button_div{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  /* background-color: #ec990a; */
+}
+.slider-button{
+  /* background-color: rgb(7, 203, 111); */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.prev {
+
+  background-color: var(--dark-blue);
+  padding: 10px 20px;
+  margin: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.next {
+  margin: 5px;
+  background-color: var(--dark-blue);
+  padding: 10px 20px;
+  margin-right: 20px;
+  color: white;
+  font-weight: 600;
+
+}
+
 
 /* ------------MEDIA QUERIES------------------- */
 @media only screen and (max-width: 300px) {

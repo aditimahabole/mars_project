@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
   /* background-color: burlywood; */
 }
 
@@ -18,6 +18,8 @@
 
   /* Jost font here not working*/
   font-family: var(--jost);
+  /* background-color: orange; */
+  height: 100%;
 }
 /* ----------------LEFT CONTAINER PHOTO CSS---------------------- */
 
@@ -455,6 +457,7 @@
   font-size: 3.12em;
   line-height: 77px;
   color: rgb(255, 255, 255);
+  /* background-color: #0d5ef4; */
 }
 
 /* -----------------------------LEFT CONTAINER---------------------------------------- */
@@ -467,6 +470,7 @@
   /* background-color: pink; */
   height: 60%;
   display: flex;
+  padding: 10px;
 }
 .about_left_container_top_left {
   /* background-color: maroon; */
@@ -479,6 +483,7 @@
   height: 100%;
   width: 100%;
   border-radius: 20px;
+
 }
 .about_left_container_top_right {
   /* background-color: rgb(198, 142, 142); */
@@ -529,6 +534,7 @@
   display: flex;
   flex-direction: column;
   /* background-color: blueviolet; */
+  padding-left: 30px;
 }
 
 .right_container_text span {
@@ -551,6 +557,8 @@
 
 .right_container_pointers {
   display: flex;
+  /* background-color: yellowgreen; */
+  padding-left: 20px;
 }
 
 .pointers_photo_div {
@@ -678,10 +686,16 @@
   }
   .left_container {
     display: none;
+    background-color: aquamarine;
+    height: 100%;
+    /* padding: 20px; */
+    margin-right: 20px;
   }
   .right_container {
  
     font-size: 14px;
+    background-color: yellow;
+    
   }
   .right_container_pointers {
     display: flex;

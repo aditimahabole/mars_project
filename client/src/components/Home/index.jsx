@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import SecondNavbar from "../SecondNavbar/index";
 import Navbar from "../Navbar/index";
 import Introduction from "../Intro/index";
+import Partners from "../Partners/index";
 import InternshipSection from "../Internships/index";
 import About from "../About/index";
 import PopularInternship from "../PopularInternship/index";
@@ -39,6 +40,7 @@ const Index = () => {
     <>
       {scrolled ? <SecondNavbar /> : <Navbar />}
       <Introduction />
+      <Partners/>
       <InternshipSection />
       <About />
       <PopularInternship />

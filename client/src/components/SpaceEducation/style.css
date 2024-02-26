@@ -32,18 +32,15 @@
   /* background-color: yellow; */
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  padding-top: 50px 20px;
 }
 
 .space_education_container {
-  /* max-width: 1140px; */
-  width: 100%;
+  width: 98%;
   display: flex;
-  /* margin-right: auto;
-    margin-left: auto; */
-  /* background-color: orange; */
-  justify-content: center;
-  /* background-color: rgb(255, 255, 198); */
+  justify-content: space-between;
+
   font-family: var(--jost);
 }
 
@@ -57,11 +54,10 @@
 /* -----------------------------LEFT CONTAINER---------------------------------------- */
 .space_education_left_container {
   /* background-color: pink; */
-  /* padding: 20px; */
+  width: 50%;
   min-height: 500px;
   overflow: hidden;
-
-  width: 100%;
+  padding: 0px 20px;
   z-index: 0;
 }
 /* -------------LEFT IMAGE BOX--------------- */
@@ -140,12 +136,12 @@
 .space_education_right_container {
   padding: 0 12px 0 12px;
   min-height: 500px;
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   /* background-color: greenyellow; */
-  padding: 20px;
+  /* padding: 20px; */
   width: 50%;
 }
 
@@ -155,7 +151,7 @@
   flex-wrap: wrap;
 }
 .space_education_wrapped_text {
-  max-width: 100%;
+  /* max-width: 100%; */
   white-space: normal;
   word-wrap: break-word;
 }

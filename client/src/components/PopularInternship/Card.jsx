@@ -4,6 +4,7 @@ import StarIcon from "@mui/icons-material/Star";
 import DocumentIcon from "@mui/icons-material/Description";
 import UserIcon from "@mui/icons-material/AccountCircle";
 import BarChartIcon from "@mui/icons-material/BarChart";
+import some_img from '../../../public/assets/about_1_2.png';
 
 const CardComponent = ({ Title }) => {
     console.log(Title)
@@ -21,7 +22,8 @@ const CardComponent = ({ Title }) => {
         ))}
       </div>
       <div className="popular_internship_card_heading">
-        <span className="pop_inter_head">{Title}</span>
+        <div className="pop_inter_head1">{Title}</div>
+        <div className="pop_inter_head2"><img src={some_img} className="pop_inter_head_img"/> </div>
       </div>
       <div className="popular_internship_card_lesson">
         <div>

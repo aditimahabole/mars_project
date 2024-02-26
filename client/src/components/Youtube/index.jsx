@@ -14,7 +14,7 @@ const SlantedDiv = () => {
         <div className="sl2">
           <h1>Get Online Internships</h1>
         </div>
-        <Button  content="JOIN WITH US" color1="dark_blue" color2="white"/>
+        <Button  content="JOIN WITH US" color1="--dark-black" color2="--red1"/>
         {/* <div className="youtube_button_container">
           <button className="youtube_button">
             <span className="youtube_transition"></span>

@@ -208,18 +208,6 @@
 }
 .all_btn_div {
 
-  /* font-size: 16px;
-  padding: 10px 20px;
-  font-weight: 500;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--dark-blue); */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   font-size: 16px;

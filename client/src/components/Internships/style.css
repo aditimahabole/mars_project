@@ -1,15 +1,40 @@
+.internship_main_section{
+  background-color: rgb(231, 246, 255);
+  padding: 100px 0px;
+
+}
+
+
+
+
 .internship_section {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* background-color: pink; */
+  
 }
 .single_internship_div {
   padding: 10px;
   position: relative;
   height: 10rem;
   margin: 5px;
+  flex: 1;
+  /* background-color: orange; */
+  
+}
+
+.internship_section_heading{
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.internship_section_heading_h1{
+  font-size: 36px;
+  font-family: var(--jost);
+
 }
 .internship_headings {
   font-family: var(--jost);
@@ -21,6 +46,7 @@
   font-family: var(--roboto);
   color: rgb(177, 177, 177);
   font-size: 0.8rem;
+  
 }
 .internship_logo {
   position: absolute;
@@ -60,7 +86,7 @@
   max-width: 262px;
   border-radius: 5px;
 
-  border: 1px solid var(--light-blue);
+  border: 1px solid rgb(0, 132, 255);
   padding: 32px 24px;
   margin: 12px;
   text-decoration: none;
@@ -88,11 +114,44 @@
 }
 
 .internship_card1:hover p {
-  transition: all 0.3s ease-out;
+  transition:  0.5s ease-out;
   color: rgba(255, 255, 255, 0.8);
+ 
 }
 
 .internship_card1:hover h3 {
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
   color: #fff;
+}
+
+/* ---------------SLIDER --------------------- */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-items {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider-item {
+  width: 25%; /* Each card takes up 25% of the container width */
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }

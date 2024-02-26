@@ -183,8 +183,7 @@ import {
 
 
 const Button = ({ content, color1, color2 ,text}) => {
-  console.log('-------------',content)
-  console.log(content, color1, color2 ,text)
+
  
   
   return (

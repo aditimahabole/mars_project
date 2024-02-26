@@ -1,13 +1,11 @@
 import "./style.css";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { ArrowRightAlt } from "@mui/icons-material";
 import left_image1 from "../../../public/assets/wcu_1_1.png";
-
 import left_image2 from "../../../public/assets/wcu_1_shape1.png";
-
 import left_image3 from "../../../public/assets/student-group_1_1.png";
-
+import Button from "../Offer/Button";
+// ----------------------------------------------------------------------------------------------------
 const Index = () => {
   return (
     <div className="space_education_section">
@@ -31,7 +29,7 @@ const Index = () => {
               </div>
             </div>
             <div className="space_education_button_container">
-              <button className="space_education_button">
+              {/* <button className="space_education_button">
                 <span className="space_education_transition"></span>
                 <span className="space_education_gradient"></span>
                 <span className="space_education_label">
@@ -46,7 +44,12 @@ const Index = () => {
                     />{" "}
                   </span>{" "}
                 </span>
-              </button>
+              </button> */}
+              <Button
+                content="GET STARTED"
+                color1="--dark-blue"
+                color2="--dark-black"
+              />
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@ const index = () => {
             />
             FEATURED EVENTS
           </span>
-          <h2 className="event_headings_h2">Our Upcoming Events</h2>
+          <h2 className="event_headings_h2">Upcoming Webinar & Workshop</h2>
         </div>
         <div className="event_div">
             <div  className="event_div_slide" >
