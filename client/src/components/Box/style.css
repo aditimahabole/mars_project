@@ -1,10 +1,26 @@
-.box_card_cards1{
-    background: rgb(242,15,16);
-background: linear-gradient(180deg, rgba(242,15,16,1) 0%, rgba(247,101,102,1) 100%);
-
+.box_card_cards1 {
+  position: relative;
+  background: rgb(242, 15, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 15, 16, 1) 0%,
+    rgba(247, 101, 102, 1) 100%
+  );
 }
-.box_card_cards2{
-    background: rgb(13,94,244);
-background: linear-gradient(180deg, rgba(13,94,244,1) 0%, rgba(110,159,248,1) 100%);
-
+.box_card_cards2 {
+  background: rgb(13, 94, 244);
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 94, 244, 1) 0%,
+    rgba(110, 159, 248, 1) 100%
+  );
+}
+.teacher_photo {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  height: 90%;
+  width: 50%;
+  z-index: 1;
 }

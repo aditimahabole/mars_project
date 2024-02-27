@@ -9,7 +9,7 @@ const CardComponent = ({ by_person, time, topic, image }) => {
   return (
     <div className="blog_card">
       <div className="blog_card_left">
-        <img src={image} />
+        <img src={image} className="blog_photo" />
       </div>
       <div className="blog_card_right">
         <div className="blog_card_right">
@@ -28,7 +28,7 @@ const CardComponent = ({ by_person, time, topic, image }) => {
             </span>{" "}
             {by_person}{" "}
           </span>
-          <span>
+          <span  className="blog_card_right_span" >
             {" "}
             <span className="blog_card_right_span_icon">
               {" "}
@@ -45,6 +45,8 @@ const CardComponent = ({ by_person, time, topic, image }) => {
             {time}{" "}
           </span>
         </div>
+
+
         <div>
           <h3 className="blog_card_right_h3">{topic} </h3>
         </div>
