@@ -7,10 +7,10 @@ const BoxCard = ({ top, middle, bg_color, bg_gradient }) => {
   console.log(bg_color);
 
   return (
-    <div className="box_card_main" style={{ padding: "20x" }}>
+    <div className="box_card_main" style={{ }}>
       <div
         className="box_card_in"
-        style={{ margin: "0px 12px", padding: "10px" }}
+        style={{ margin: "10px 10px"}}
       >
         <div
           className="right_container_text"

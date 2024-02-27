@@ -35,8 +35,8 @@
 }
 .event_headings_h2 {
     font-family: var(--jost);
-    font-size: 44px;
-    color: rgb(15, 34, 57);
+    font-size: 36px;
+    color: black;
     font-weight: 700;
     /* background-color: palegoldenrod; */
     /* margin-bottom: 15px; */
@@ -99,7 +99,7 @@
     flex-direction: column;
     width: 90%;
     /* background-color: greenyellow; */
-    margin-top: 10%;
+    margin-top: 20px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
   }
   .event_div_slide{

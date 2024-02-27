@@ -9,7 +9,7 @@
 
 .testimonial_inner {
   /* background-color: darkblue; */
-  padding: 30px;
+  padding: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
   align-items: center;
   flex-direction: column;
   /* background-color: orange; */
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .testimonial_headings_span {
   font-family: var(--jost);
@@ -141,7 +141,7 @@
   flex-direction: column;
   width: 90%;
   /* background-color: greenyellow; */
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 .testimonial_div_slide {
   width: 100%;

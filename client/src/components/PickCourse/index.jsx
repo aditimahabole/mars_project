@@ -1,18 +1,20 @@
 import Course from "./CourseCard";
 import "./style.css";
-import img1 from "../../../public/assets/cat-1_1.svg";
-import img2 from "../../../public/assets/cat-1_2.svg";
-import img3 from "../../../public/assets/cat-1_3.svg";
-import gol from "../../../public/assets/cta_2_shape3.png";
+// import img1 from "../../../public/assets/cat-1_1.svg";
+// import img2 from "../../../public/assets/cat-1_2.svg";
+// import img3 from "../../../public/assets/cat-1_3.svg";
+import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
+import banner from "../../../public/assets/about_1_2.png";
 
 // import img4 from "../../../public/assets/cat-1_4.svg";
 import { useState } from "react";
+import Button from "../Offer/Button";
 
 const Index = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const handleClickNext = () => {
-    setStartIndex((prevIndex) => Math.min(prevIndex + 1, 4 - 1));
+    setStartIndex((prevIndex) => Math.min(prevIndex + 1, 5 - 1));
   };
 
   const handleClickPrev = () => {
@@ -20,25 +22,28 @@ const Index = () => {
   };
   return (
     <div className="course_main_section">
-        <div className="gol1">
-
-            <img src={gol} />
-        </div>
-
-        <div className="gol2">
-
-<img src={gol} />
-</div>
-      <div className="course_section_heading">
-        <h1 className="internship_section_heading_h1">
+      <div className="course_section_heading" style={{ gap:"10px"}}>
+      <p style={{fontSize:"16px" , color:'var(--dark-blue)' , fontWeight:"500" }}>
+                <DescriptionOutlinedIcon
+                  style={{
+                    fontSize: "16px",
+                    width: "16px",
+                    height: "16px",
+                    paddingRight: "5px",
+                  }}
+                />
+               POPULAR COURSES
+              </p>
+             
+        <h1 className="course_section_heading_h1">
           Pic A Course To Get Started
         </h1>
       </div>
-      <div className="internship_section"></div>
-      <div className="internship_bottom_items">
+   
+      <div className="course_bottom_items">
         <div className="pop_inter_slider_div">
           <div className="slider-container">
-            <div className="slider_button_div">
+            <div className="course_slider_button_div">
               <div>
                 <button
                   className="slider-button prev"
@@ -65,69 +70,107 @@ const Index = () => {
               <div className="course_bottom_box">
                 <div className="single_internship_div">
                   <Course
-                    image={img2}
+                    image={banner}
                     heading="Machine Learning"
                     status="Upcoming Internships"
                     star={4}
-                    para="Learn Machine Learning and Deep Learning"
+                    price={500}
+                    lesson={14}
+                    students={50}
                   />
                 </div>
                 <div className="single_internship_div">
                   <Course
-                    image={img2}
-                    heading="Software Engineering"
+                    image={banner}
+                    heading="Machine Learning"
                     status="Upcoming Internships"
                     star={4}
-                    para="Learn about software development methodologies and practices"
+                    price={500}
+                    lesson={14}
+                    students={50}
                   />
                 </div>
                 <div className="single_internship_div">
                   <Course
-                    image={img2}
-                    heading="Mobile App Development"
+                    image={banner}
+                    heading="Machine Learning"
                     status="Upcoming Internships"
                     star={4}
-                    para="Create mobile applications for iOS and Android platforms"
+                    price={500}
+                    lesson={14}
+                    students={50}
                   />
                 </div>
                 <div className="single_internship_div">
                   <Course
-                    image={img1}
-                    heading="Database Management"
-                    status="Upcoming Internships"
-                    star={3}
-                    para="Master the concepts of database design and management systems"
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={img1}
-                    heading="Cloud Computing"
+                    image={banner}
+                    heading="Machine Learning"
                     status="Upcoming Internships"
                     star={4}
-                    para="Explore cloud infrastructure and services offered by leading providers"
+                    price={500}
+                    lesson={14}
+                    students={50}
                   />
                 </div>
                 <div className="single_internship_div">
                   <Course
-                    image={img3}
-                    heading="Cybersecurity"
+                    image={banner}
+                    heading="Machine Learning"
                     status="Upcoming Internships"
                     star={4}
-                    para="Learn about cybersecurity threats and countermeasures"
+                    price={500}
+                    lesson={14}
+                    students={50}
                   />
                 </div>
                 <div className="single_internship_div">
                   <Course
-                    image={img3}
-                    heading="Web Development"
+                    image={banner}
+                    heading="Machine Learning"
                     status="Upcoming Internships"
-                    star={5}
-                    para="Explore modern web development technologies and frameworks"
+                    star={4}
+                    price={500}
+                    lesson={14}
+                    students={50}
+                  />
+                </div>
+                <div className="single_internship_div">
+                  <Course
+                    image={banner}
+                    heading="Machine Learning"
+                    status="Upcoming Internships"
+                    star={4}
+                    price={500}
+                    lesson={14}
+                    students={50}
+                  />
+                </div>
+                <div className="single_internship_div">
+                  <Course
+                    image={banner}
+                    heading="Machine Learning"
+                    status="Upcoming Internships"
+                    star={4}
+                    price={500}
+                    lesson={14}
+                    students={50}
                   />
                 </div>
               </div>
+
+
             </div>
+
+
+
+
+
+
+
+            
+            <div className="course_button_bottom">
+                <Button content="EXPLORE MORE COURSES" />
+              </div>
           </div>{" "}
         </div>
       </div>

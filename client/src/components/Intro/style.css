@@ -6,7 +6,7 @@
   position: relative;
   /* background-color: aquamarine; */
   width: 100%;
-  height: 56rem;
+  height: 27rem;
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -33,9 +33,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 900px;
-  top: 100px;
-  right: -80px;
+  height: 100%;
+  /* background-color: aquamarine; */
+  /* top: 100px; */
+  /* right: -80px; */
 
   /* height: 100px; */
   /* top: 50px; */
@@ -106,14 +107,15 @@
 .intro_left_div {
   color: white;
   z-index: 100;
-  height: 100%;
+  height: 90%;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5%;
+  padding: 20px;
   flex-direction: column;
   position: relative;
+  /* background-color: orange; */
 }
 
 
@@ -136,11 +138,13 @@
 }
 
 .intro_left_div_content {
-  height: 50%;
+  height: 100%;
+  /* padding: 10px 20px; */
   width: 100%;
   display: flex;
   align-items: left;
   flex-direction: column;
+  /* background-color: peachpuff; */
 }
 
 .span1 {
@@ -236,14 +240,15 @@ background: linear-gradient(180deg, rgba(200,218,255,1) 0%, rgba(0,100,255,1) 10
   /* padding-left: 5%; */
   flex-direction: column;
   position: relative;
+  /* background-color: aquamarine; */
 }
 
 .circle {
   background-color: white;
   border-radius: 50%;
   padding: 20px;
-  height: 31rem;
-  width: 31rem;
+  height: 20rem;
+  width: 20rem;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 

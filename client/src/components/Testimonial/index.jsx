@@ -12,7 +12,7 @@ const Index = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const handleClickNext = () => {
-    setStartIndex((prevIndex) => Math.min(prevIndex + 1, 6 - 1));
+    setStartIndex((prevIndex) => Math.min(prevIndex + 1, 4 - 1));
   };
 
   const handleClickPrev = () => {
@@ -37,7 +37,7 @@ const Index = () => {
             OUR STUDENTS TESTIMONIALS
           </span>
           <h2 className="testimonial_headings_h2">
-            Students Say’s About MARS Exploration
+            Students Say’s About MARSE Exploration
           </h2>
         </div>
         <div className="testimonial_div">
@@ -61,7 +61,7 @@ const Index = () => {
             <div className="slider-container">
               <div
                 className="slider-items"
-                style={{ transform: `translateX(-${startIndex * 25}%)` }}
+                style={{ transform: `translateX(-${startIndex * 50}%)` }}
               >
                 <TestimonialCard
               image={user_image}

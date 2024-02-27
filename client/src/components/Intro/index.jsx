@@ -88,7 +88,7 @@ const App = () => {
       <div className="floating_square"></div>
 
       <div className="intro_left_div">
-        <div className={"intro_left_div_content"}>
+        <div className="intro_left_div_content">
           <div
             className={
               "intro_left_area " +

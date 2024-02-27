@@ -5,13 +5,13 @@ import red_teacher from "../../../public/assets/red_teacher.svg";
 import blue_teacher from "../../../public/assets/blue_teacher.svg";
 const index = () => {
   return (
-    <div className="box_card_div" style={{ display: "flex" }}>
+    <div className="box_card_div" style={{ display: "flex",padding:"20px 40px", justifyContent:"space-evenly" }}>
       <div
         className="box_card_cards1"
         style={{
           display: "flex",
           flexDirection: "column",
-          width: "45%",
+          width: "40%",
           margin: "5px",
           borderRadius: "10px",
           padding: "20px",
@@ -38,7 +38,7 @@ const index = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          width: "45%",
+          width: "40%",
           margin: "5px",
           borderRadius: "10px",
           padding: "20px",
