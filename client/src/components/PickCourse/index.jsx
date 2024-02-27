@@ -22,156 +22,151 @@ const Index = () => {
   };
   return (
     <div className="course_main_section">
-      <div className="course_section_heading" style={{ gap:"10px"}}>
-      <p style={{fontSize:"16px" , color:'var(--dark-blue)' , fontWeight:"500" }}>
-                <DescriptionOutlinedIcon
-                  style={{
-                    fontSize: "16px",
-                    width: "16px",
-                    height: "16px",
-                    paddingRight: "5px",
-                  }}
-                />
-               POPULAR COURSES
-              </p>
-             
+      <div className="course_internship_container">
+      <div className="course_section_heading" style={{ gap: "10px" }}>
+        <p
+          style={{
+            fontSize: "16px",
+            color: "var(--dark-blue)",
+            fontWeight: "500",
+          }}
+        >
+          <DescriptionOutlinedIcon
+            style={{
+              fontSize: "16px",
+              width: "16px",
+              height: "16px",
+              paddingRight: "5px",
+            }}
+          />
+          POPULAR COURSES
+        </p>
+
         <h1 className="course_section_heading_h1">
           Pic A Course To Get Started
         </h1>
       </div>
-   
+
+      <div className="course_slider_button_div">
+        <div>
+          <button className="slider-button prev" onClick={handleClickPrev}>
+            {" "}
+            &lt;
+          </button>
+        </div>
+        <div>
+          <button className="slider-button next" onClick={handleClickNext}>
+            {" "}
+            &gt;
+          </button>
+        </div>
+      </div>
+
+
       <div className="course_bottom_items">
-        <div className="pop_inter_slider_div">
-          <div className="slider-container">
-            <div className="course_slider_button_div">
-              <div>
-                <button
-                  className="slider-button prev"
-                  onClick={handleClickPrev}
-                >
-                  {" "}
-                  &lt;
-                </button>
-              </div>
-              <div>
-                <button
-                  className="slider-button next"
-                  onClick={handleClickNext}
-                >
-                  {" "}
-                  &gt;
-                </button>
-              </div>
-            </div>
-            <div
-              className="slider-items"
-              style={{ transform: `translateX(-${startIndex * 25}%)` }}
-            >
-              <div className="course_bottom_box">
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-                <div className="single_internship_div">
-                  <Course
-                    image={banner}
-                    heading="Machine Learning"
-                    status="Upcoming Internships"
-                    star={4}
-                    price={500}
-                    lesson={14}
-                    students={50}
-                  />
-                </div>
-              </div>
+        <div className="slider-container">
+          <div
+            className="slider-items"
+            style={{ transform: `translateX(-${startIndex * 100}%)` }}
+          >
+            {/* <div className="course_bottom_box"> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+            {/* <div className="single_internship_div"> */}
+              <Course
+                image={banner}
+                heading="Machine Learning"
+                status="Upcoming Internships"
+                star={4}
+                price={500}
+                lesson={14}
+                students={50}
+              />
+            {/* </div> */}
+          </div>
+        </div>
+
+       
+      </div>{" "}
 
 
-            </div>
-
-
-
-
-
-
-
-            
-            <div className="course_button_bottom">
-                <Button content="EXPLORE MORE COURSES" />
-              </div>
-          </div>{" "}
+      <div className="course_button_bottom">
+          <Button content="EXPLORE MORE COURSES" />
         </div>
       </div>
     </div>

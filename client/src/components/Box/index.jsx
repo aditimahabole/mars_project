@@ -8,6 +8,7 @@ const index = () => {
     <div className="box_card_div" style={{ display: "flex",padding:"20px 40px", justifyContent:"space-evenly" }}>
       <div
         className="box_card_cards1"
+
         style={{
           display: "flex",
           flexDirection: "column",
@@ -16,7 +17,7 @@ const index = () => {
           borderRadius: "10px",
           padding: "20px",
           maxHeight:"500px",
-          backgroundColor:"yellow"
+          // backgroundColor:"yellow"
         }}
       >
         <img src={blue_teacher} className="teacher_photo" />
@@ -26,6 +27,8 @@ const index = () => {
           bg_color="--red1"
           bg_gradient="--red1bg"
         />
+
+
         <Button
           content="JOIN WITH INSTRUCTOR"
           color1="--dark-blue"
@@ -33,6 +36,8 @@ const index = () => {
           text="--light-white"
         />
       </div>
+
+      
       <div
         className="box_card_cards2"
         style={{

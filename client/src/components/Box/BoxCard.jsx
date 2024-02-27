@@ -7,7 +7,7 @@ const BoxCard = ({ top, middle, bg_color, bg_gradient }) => {
   console.log(bg_color);
 
   return (
-    <div className="box_card_main" style={{ }}>
+    <div className="box_card_main" >
       <div
         className="box_card_in"
         style={{ margin: "10px 10px"}}
@@ -33,7 +33,8 @@ const BoxCard = ({ top, middle, bg_color, bg_gradient }) => {
               fontFamily: `var(--jost)`,
               fontSize: "30px",
               zIndex: "5",
-              width: "50%",
+              width: "60%",
+              // backgroundColor:"transparent"
             }}
           >
             {middle}

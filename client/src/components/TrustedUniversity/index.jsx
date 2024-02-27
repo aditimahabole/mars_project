@@ -11,7 +11,7 @@ import t6 from "../../../public/assets/trusted_university_6.png";
 import t7 from "../../../public/assets/trusted_university_7.png";
 import t8 from "../../../public/assets/trusted_university_8.png";
 import t9 from "../../../public/assets/trusted_university_9.png";
-import t10 from "../../../public/assets/trusted_university_10.png";
+
 // ---------------------------------------------------------------
 const index = () => {
   return (
@@ -65,9 +65,7 @@ const index = () => {
             <div className="trusted_image">
               <img src={t9}   className="trusted_image_t9"/>
             </div>
-            <div className="trusted_image">
-              <img src={t10}   className="trusted_image_t10"/>
-            </div>
+          
           </div>
         {/* </div> */}
       {/* </div> */}

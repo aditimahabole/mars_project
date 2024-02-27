@@ -1,21 +1,15 @@
 .course_main_section {
   background-color: var(--smoke-color1);
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
   /* min-height: 100vh; */
   position: relative;
   /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* --------------------TOPIC SECTION------------------------- */
 
-
-.internship_section_top_buttons {
-  /* background-color: yellow; */
-  display: flex;
-}
-
-.internship_section_button_div {
-  /* background-color: pink; */
-}
 .internship_section_button {
   background-color: var(--dark-blue);
   padding: 10px;
@@ -33,17 +27,22 @@
 /* -----------------BOTTOM------------------------------ */
 
 .course_bottom_items {
-  /* background-color: green; */
-  /* min-height: 100px; */
   height: 100%;
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
+  display: flex;
+  /* align-items: center; */
+  width: 100%;
+  /* min-height:100vh; */
+  flex-direction: column;
+  /* padding: 0px 20px; */
+  /* background-color: rgb(249, 202, 60); */
 }
 .course_bottom_box {
   display: flex;
   /* background-color: rgb(159, 10, 107); */
   justify-content: flex-start;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   /* overflow: hidden; */
 
   /* height: 100%; */
@@ -51,21 +50,21 @@
   /* overflow-x: scroll; */
 }
 
-.course_last_part_div{
+.course_last_part_div {
   display: flex;
   /* background-color: aquamarine; */
   justify-content: space-between;
 }
-.course_last_part{
+.course_last_part {
   font-size: 0.8rem;
   color: var(--light-color);
   /* background-color: rgb(207, 25, 227); */
 }
 /* ----------------------------------------------------------- */
 .course_logo {
-  /* background-color: pink; */
+  background-color: rgb(78, 5, 65);
   /* padding: 10px; */
-  height: 150px;
+  height: 40%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -73,9 +72,10 @@
   object-fit: cover;
 }
 
-.clogo{
+.clogo {
   /* background-color: orange; */
   /* padding: 10px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   height: 100%;
   width: 100%;
 }
@@ -89,17 +89,17 @@
 }
 /* ---------CARD----------- */
 .course_card1 {
+  /* background-color: rgb(238, 168, 168); */
+  /* border-radius: 10px; */
+  margin: 10px 20px;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  position: relative;
-  width: 270px;
+  justify-content: space-around;
+  min-width: 300px;
   min-height: 350px;
-  border-radius: 5px;
-  text-decoration: none;
-  z-index: 0;
-  overflow: hidden;
-  background-color: white;
+  font-family: var(--jost);
+
+  padding: 5px 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -131,17 +131,16 @@
 .course_heading {
   font-size: 1.1rem;
   font-weight: 600;
-
 }
 .inter_para {
   font-size: 0.8rem;
   /* font-weight: 600; */
 }
-.course_price{
+.course_price {
   font-size: 1rem;
   color: var(--red1);
 }
-.course_button_bottom{
+.course_button_bottom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,12 +155,12 @@
   align-items: center;
   flex-direction: column;
 }
-.course_section_heading_h1{
+.course_section_heading_h1 {
   font-size: 40px;
   font-family: var(--jost);
   color: black;
 }
-.course_slider_button_div{
+.course_slider_button_div {
   /* background-color: pink; */
   display: flex;
   width: 100%;
@@ -182,25 +181,18 @@
   font-size: 0.8rem;
 }
 
-.internship_go-corner {
+.course_internship_container {
+  /* background-color: yellow; */
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  width: 90%;
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background-color: var(--dark-blue);
-  border-radius: 0 4px 0 32px;
-}
-
-.internship_go-arrow {
-  margin-top: -4px;
-  margin-right: -4px;
-  color: white;
-  font-family: courier, sans;
+  /* background-color: rgb(16, 184, 210); */
+  padding: 20px;
 }
 
 /* ---------------SLIDER --------------------- */

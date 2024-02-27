@@ -4,6 +4,7 @@
   min-height: 100vh;
   color: var(--dark-black);
 
+
 }
 
 
@@ -20,25 +21,26 @@
 .internship_section_top_buttons{
   /* background-color: yellow; */
   display: flex;
+  padding: 20px;
 }
 
 
 
-.internship_section_button_div{
-  /* background-color: pink; */
-}
+
 .internship_section_button{
   background-color: var(--dark-blue);
-  padding: 10px;
+  padding: 20px 10px;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 5px;
   cursor: pointer;
+  /* background-color: orange; */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .internship_section_button:hover{
   background-color: var(--dark-black);
+  /* background-color: aquamarine; */
 }
 /* -----------------BOTTOM------------------------------ */
 .internship_bottom_items{
@@ -46,21 +48,26 @@
   /* min-height: 100px; */
   height: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .internship_bottom_box{
   display: flex;
   /* background-color: greenyellow; */
   justify-content: flex-start;
+  align-items: center;
+  padding: 0px 30px;
 
   height: 100%;
-  min-height: 70vh;
+  /* min-height: 70vh; */
   /* overflow-x: scroll; */
 
 }
 /* ----------------------------------------------------------- */
 .ilogo{
   /* background-color: orange; */
-  padding: 10px;
+  /* padding: 10px; */
 }
 .single_internship_div {
   padding: 10px;
@@ -76,15 +83,17 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  justify-content: space-between;
   position: relative;
-  width: 250px;
+  min-width: 250px;
   min-height: 350px;
   border-radius: 5px;
   text-decoration: none;
   z-index: 0;
+  margin: 0px 10px;
   overflow: hidden;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
 }
 
@@ -156,11 +165,12 @@
 .internship_logo {
  /* background-color: pink; */
  padding: 10px;
- height: 100px;
+ height:150px;
  display: flex;
  align-items: center;
  justify-content: center;
  object-fit: cover;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .internship_go-corner {

@@ -1,5 +1,5 @@
 .card {
-    width:250px;
+    width:300px;
     height: 300px;
     transition: all .5s;
     box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
@@ -11,7 +11,7 @@
   }
   
   .card:hover {
-    height: 500px;
+    height: 600px;
     /* background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%); */
   }
   

@@ -1,180 +1,129 @@
+import AboutCards from "./AboutCards";
 import "./style.css";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+// import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 // import { ArrowRightAlt } from "@mui/icons-material";
 import about_img from "../../../public/assets/about_1_1.png";
-import about_img2 from "../../../public/assets/about_1_2.png";
-import floating_book from '../../../public/assets/about_1_shape1.png'
-import Button from "../Offer/Button";
+import about_img1 from "../../../public/assets/about_1_2.png";
+// import floating_book from "../../../public/assets/about_1_shape1.png";
+// import Button from "../Offer/Button";
 
-import about_kid_head from "../../../public/assets/about_1_4.png";
+// import about_kid_head from "../../../public/assets/about_1_4.png";
+import { useState } from "react";
 
 const Index = () => {
+  const [activeButton, setActiveButton] = useState("");
+  const [show, setShow] = useState({
+    about_marse: true,
+    our_mission: false,
+    our_vision: false,
+  });
+
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+    if (buttonName === "About Marse") {
+      setShow({
+        about_marse: true,
+        our_mission: false,
+        our_vision: false,
+      });
+    } else if (buttonName === "Our Mission") {
+      setShow({
+        about_marse: false,
+        our_mission: true,
+        our_vision: false,
+      });
+    } else if (buttonName === "Our Vision") {
+      setShow({
+        about_marse: false,
+        our_mission: false,
+        our_vision: true,
+      });
+    }
+  };
+
   return (
-   
-      <div className="about_us">
-        <div className="about_us_container">
-          {/* --------------------------------LEFT PART----------------------- */}
-          <div className="left_container">
-            <div className="about_left_container_top">
-              <div className="about_left_container_top_left">
-                <div className="container noselect">
-                  <div className="canvas">
-                    {Array.from({ length: 25 }, (_, index) => (
-                      <div
-                        key={`tracker-${index}`}
-                        className={`tracker tr-${index + 1}`}
-                      ></div>
-                    ))}
-                    <div id="card">
-                      <img src={about_img} alt="about" className="about_img" />
-                      <p id="prompt"></p>
-                      <div className="title"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="about_left_container_top_right">
-                <div className="about_left_container_top_right_card">
-                  <div className="about_left_container_top_right_container"></div>
-
-                  <span className="about_left_container_top_right_temp">
-                  3k<span style={{"color":" #0d5ef4"}}>+</span> 
-                  </span>
-                  <p className="about_right_p">STUDENTS ACTIVE</p>
-                  <p className="about_right_p">OUR COURSES</p>
-                </div>
-              </div>
-            </div>
-            <div className="about_left_container_bottom">
-                <div className="floating_book">
-                    <img src={floating_book}alt="book" />
-
-                </div>
-
-                <div className="about_left_container_top_left">
-                <div className="container noselect">
-                  <div className="canvas">
-                    {Array.from({ length: 25 }, (_, index) => (
-                      <div
-                        key={`tracker-${index}`}
-                        className={`tracker tr-${index + 1}`}
-                      ></div>
-                    ))}
-                    <div id="card">
-                      <img src={about_img2} alt="about" className="about_img" />
-                      <p id="prompt"></p>
-                      <div className="title"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                
-            </div>
+    <div className="about_us">
+      <div className="about_us_container">
+        <div className="about_left_div">
+          <div className="about_left_div_top_content">
+            <span className="about_left_div_top_content_span"> <DescriptionOutlinedIcon
+                style={{
+                  fontSize: "16px",
+                  width: "16px",
+                  height: "16px",
+                  paddingRight: "5px",
+                }}
+              />ABOUT US</span>
+            <h2 className="about_left_div_top_content_h2">
+              We Provide Best <span className="edu_span">Education </span>{" "}
+              Services For You
+            </h2>
           </div>
-          {/* --------------------------------RIGHT PART----------------------- */}
-          <div className="right_container">
-            <div className="right_container_text">
-              <span>
-                <DescriptionOutlinedIcon
-                  style={{
-                    fontSize: "16px",
-                    width: "16px",
-                    height: "16px",
-                    paddingRight: "5px",
-                  }}
-                />
-                ABOUT US
-              </span>
-              <h2>WELCOME TO MARS EXPLORATION</h2>
-              <p className="about_wrapped_text">
-                Welcome to MARS Exploration - the leading space edu tech company
-                in India. We offer online internships and training in the
-                exciting fields of aerospace, space, astronomy, and
-                astrophysics. Our courses are designed to prepare you for the
-                next generation of space exploration.
-              </p>
-            </div>
+          <div className="about_left_div_middle_links">
+            <button
+              className={`about_link_button ${
+                activeButton === "About Marse" ? "about_bt_active" : ""
+              }`}
+              onClick={() => handleButtonClick("About Marse")}
+            >
+              About Marse
+            </button>
+            <button
+              className={`about_link_button ${
+                activeButton === "Our Mission" ? "about_bt_active" : ""
+              }`}
+              onClick={() => handleButtonClick("Our Mission")}
+            >
+              Our Mission
+            </button>
+            <button
+              className={`about_link_button ${
+                activeButton === "Our Vision" ? "about_bt_active" : ""
+              }`}
+              onClick={() => handleButtonClick("Our Vision")}
+            >
+              Our Vision
+            </button>
+          </div>
 
-            <div className="right_container_pointers">
-              <div className="pointers_photo_div">
-                <img
-                  className="pointers_photo_size"
-                  src={about_kid_head}
-                  alt="bgb"
-                />
-              </div>
-              <div className="right_container_pointers_text">
-                <ul>
-                  <li>
-                    <span>
-                      <CheckCircleIcon
-                        style={{
-                          color: "#0D5EF4",
-                          fontSize: "16px",
-                          width: "16px",
-                          height: "16px",
-                          paddingRight: "5px",
-                        }}
-                      />
-                    </span>
-                    Get access to 10+ of our top Internship
-                  </li>
-                  <li>
-                    <span>
-                      <CheckCircleIcon
-                        style={{
-                          color: "#0D5EF4",
-                          fontSize: "16px",
-                          width: "16px",
-                          height: "16px",
-                          paddingRight: "5px",
-                        }}
-                      />
-                    </span>
-                    Popular topics to learn now
-                  </li>
-                  <li>
-                    <span>
-                      <CheckCircleIcon
-                        style={{
-                          color: "#0D5EF4",
-                          fontSize: "16px",
-                          width: "16px",
-                          height: "16px",
-                          paddingRight: "5px",
-                        }}
-                      />
-                    </span>
-                    Find the right instructor for you
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className="about_left_div_bottom_text">
+            {show.about_marse && (
+              <AboutCards
+                point2="Available Online Courses"
+                point1="Education Award Achieved"
+                para="Marse is a startup offering internships and courses in aerospace and aeronauticals. We're dedicated to nurturing talent and fostering innovation in the exciting realm of space exploration and aviation."
+              />
+            )}
 
-            {/* <div className="about_more_button_container">
-              <button className="about_us_button">
-                <span className="transition"></span>
-                <span className="gradient"></span>
-                <span className="about_more_label">
-                  ABOUT MORE{" "}
-                  <span>
-                    <ArrowRightAlt
-                      style={{
-                        fontSize: "16px",
-                        width: "16px",
-                        height: "16px",
-                      }}
-                    />{" "}
-                  </span>{" "}
-                </span>
-              </button>
-            </div> */}
-            <Button content="READ MORE" color1="--dark-blue" color2="--dark-black"  text="--light-white"/>
+            {show.our_vision && (
+              <AboutCards
+                point2="Up-To-Date Course Content"
+                point1="Industry Expert Instructor"
+                para="Our vision at Marse is to become a leading platform for shaping the future of aerospace education and career opportunities. We aim to inspire and empower individuals to reach new heights in space and aeronautics."
+              />
+            )}
+
+            {show.our_mission && (
+              <AboutCards
+                point2="Lifetime Access For Learning"
+                point1="Online Remote Learning"
+                para="At Marse, our mission is to provide accessible and high-quality internships and courses in aerospace and aeronauticals. We strive to equip aspiring professionals with the skills and knowledge needed to excel in this dynamic industry."
+              />
+            )}
           </div>
         </div>
+
+
+
+        <div className="about_right_div">
+          <div className="about_right_images ari1"> <img src={about_img} className="about_image1" /> </div>
+          <div className="about_right_images ari2"> <img src={about_img1} className="about_image2" /> </div>
+
+
+        </div>
       </div>
- 
+    </div>
   );
 };
 

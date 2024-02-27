@@ -104,7 +104,8 @@ const App = () => {
             {/* Apply animate__fadeInLeft class conditionally */}
             <h1
               className={
-                "intro_headings " + (isAnimating
+                "intro_headings " +
+                (isAnimating
                   ? "animate__animated animate__fadeInLeft animate__delay-1s"
                   : "")
               }
@@ -114,7 +115,8 @@ const App = () => {
             </h1>
             <p
               className={
-                "intro_p " + (isAnimating
+                "intro_p " +
+                (isAnimating
                   ? "animate__animated animate__fadeInLeft animate__delay-1s"
                   : "")
               }

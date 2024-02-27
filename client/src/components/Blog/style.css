@@ -18,11 +18,12 @@
 
 /* ----------------------POPULAR INTERNSHIP HEADER------------------- */
 .blog_header {
-  padding: 20px 0;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
   margin-top: 50px;
+  /* background-color: orange; */
 }
 
 .our_blog {
@@ -120,7 +121,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-width: 300px;
+  min-width: 30%;
   /* min-height: 200px; */
   font-family: var(--jost);
   min-height: 400px;
