@@ -2,7 +2,7 @@ import "./style.css";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import left_image1 from "../../../public/assets/wcu_1_1.png";
-import left_image2 from "../../../public/assets/wcu_1_shape1.png";
+import left_image2 from "../../../public/assets/event_img-2.png";
 import left_image3 from "../../../public/assets/student-group_1_1.png";
 import Button from "../Offer/Button";
 // ----------------------------------------------------------------------------------------------------

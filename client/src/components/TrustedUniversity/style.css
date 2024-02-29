@@ -28,15 +28,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:31.25rem;
+    /* height:31.25rem; */
+    min-height: 250px;
     gap: 20px;
-    width: 50%;
-    padding: 30px;
+    width: 45%;
+    padding: 40px 40px;
+    /* background-color: aqua; */
 
 }
 .trusted_span{
 color: var(--dark-blue);
 font-size: 1rem;
+/* background-color: orangered; */
 }
 .trusted_h2{
     font-family: var(--jost);
@@ -57,25 +60,26 @@ font-size: 1rem;
 }
 .trusted_inner_images{
     display: flex;
-    padding-top: 20px 0 20px 0;
-    justify-content: space-around;
+    /* padding-top: 20px 0 20px 0; */
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 30px 0px;
+    padding: 40px 40px;
     height: 100%;
-    width: 50%;
-    height:31.25rem;
+    width: 45%;
+    /* height:31.25rem; */
+    min-height: 250px;
+    /* background-color: olivedrab; */
    
 
 }
 .trusted_image{
-   height: 150px;
-   width: 150px;
+   height: 100px;
+   width: 100px;
    display: flex;
    align-items: center;
    justify-content: center;
-   /* background-color: pink; */
-    /* opacity: 0.2; */
-
+   /* background-color: brown; */
+   /* flex: 1; */
 }
 .trusted_image:hover{
     opacity: 1;
@@ -87,43 +91,37 @@ font-size: 1rem;
 }
 
 .trusted_image_t2{
-    height: 50%;
-    width: 50%;
+    height: 90%;
+    width: 90%;
 }
 .trusted_image_t3{
     height: 50%;
     width: 100%;
 }
 .trusted_image_t4{
-    height: 50%;
-    width: 50%;
+    height: 90%;
+    width: 90%;
 }
 .trusted_image_t5{
-    height: 50%;
-    width: 50%;
-}
+    height: 90%;
+    width: 90%;}
 .trusted_image_t6{
-    height: 30%;
-    width: 90%;
+    height: 40%;
+    width: 100%;
 }
 .trusted_image_t7{
     height: 40%;
-    width: 90%;
+    width: 100%;
 }
 .trusted_image_t8{
-    height: 50%;
-    width: 100%;
+    height: 70%;
+    width: 120%;
 }
 .trusted_image_t9{
     height: 50%;
     width: 100%;
 }
-.trusted_image_t10{
-    height: 100%;
-    width: 100%;
-    /* background-color: blanchedalmond; */
-    /* padding: 10px; */
-}
+
 
 
  /* ----------------------MEDIA QUERIES---------------------------- */

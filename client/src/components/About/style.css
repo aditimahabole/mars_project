@@ -82,7 +82,7 @@
 
 }
 .edu_span{
-  color: var(--red1);
+  color: var(--dark-blue);
 }
 
 .about_left_div_top_content_h2{
@@ -105,8 +105,8 @@ font-size: 36px;
   font-weight: 500;
 }
 .about_bt_active{
-  color: var(--red1);
-  border-bottom: 1px solid var(--red1);
+  color: var(--dark-blue);
+  border-bottom: 1px solid var(--dark-blue);
   transition: 0.3s ease-in-out;
 }
 /* ---ABOUT CARD DIV----- */

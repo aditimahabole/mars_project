@@ -1,25 +1,27 @@
-import { useState } from "react";
+// import { useState } from "react";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import "./style.css";
-import EventCard from "./Event";
-import user_image from "../../../public/assets/event-author1.png";
-import leafy from "../../../public/assets/team-shape_1_1.png";
+import SmallCard from "./SmallCard";
+// import EventCard from "./Event";
+import user_image from "../../../public/assets/about_1_2.png";
+// import leafy from "../../../public/assets/team-shape_1_1.png";
+import LargeCard from "./LargeCard";
 
 const Index = () => {
-  const [startIndex, setStartIndex] = useState(0);
+  // const [startIndex, setStartIndex] = useState(0);
 
-  const handleClickNext = () => {
-    setStartIndex((prevIndex) => Math.min(prevIndex + 1, 5 - 1));
-  };
+  // const handleClickNext = () => {
+  //   setStartIndex((prevIndex) => Math.min(prevIndex + 1, 5 - 1));
+  // };
 
-  const handleClickPrev = () => {
-    setStartIndex((prevIndex) => Math.max(prevIndex - 1, 0));
-  };
+  // const handleClickPrev = () => {
+  //   setStartIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+  // };
   return (
     <div className="event_section">
-      <div className="leafy2">
+      {/* <div className="leafy2">
         <img src={leafy} alt="." />
-      </div>
+      </div> */}
       <div className="event_inner">
         <div className="event_headings">
           <span className="event_headings_span">
@@ -33,9 +35,24 @@ const Index = () => {
             />
             FEATURED EVENTS
           </span>
-          <h2 className="event_headings_h2">Upcoming Webinar & Workshop</h2>
+          <h2 className="event_headings_h2">Get News with MARSE</h2>
         </div>
-        <div className="event_div">
+        <div className="event_cards_div">
+          <div className="event_large_card_div">
+          <LargeCard topic="TECHNOLOGY" title="Explore Learning Landscapes in Academic" image={user_image} date="14 Nov 2023" />
+
+          </div>
+          <div className="event_small_card_div">
+            <SmallCard topic="TECHNOLOGY" title="Explore Learning Landscapes in Academic" image={user_image} date="14 Nov 2023" />
+            <SmallCard topic="TECHNOLOGY" title="Explore Learning Landscapes in Academic" image={user_image} date="14 Nov 2023" />
+            <SmallCard topic="TECHNOLOGY" title="Explore Learning Landscapes in Academic" image={user_image} date="14 Nov 2023" />
+          </div>
+
+        </div>
+
+
+
+        {/* <div className="event_div">
           <div className="slider_button_div1">
             <div>
               <button className="slider-button prev" onClick={handleClickPrev}>
@@ -114,7 +131,10 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+
+
       </div>
     </div>
   );

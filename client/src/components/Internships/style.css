@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* background-color: greenyellow; */
   
 }
 
@@ -22,6 +23,11 @@
   /* background-color: yellow; */
   display: flex;
   padding: 20px;
+  flex-wrap: wrap;
+}
+
+.internship_section_button_div{
+  /* background-color: orange; */
 }
 
 
@@ -34,12 +40,12 @@
   border-radius: 5px;
   color: rgb(255, 255, 255);
   margin: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* background-color: orange; */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .internship_section_button:hover{
-  background-color: var(--dark-black);
+  background-color: rgb(255, 31, 121);
   /* background-color: aquamarine; */
 }
 /* -----------------BOTTOM------------------------------ */
@@ -147,8 +153,8 @@
   font-family: var(--jost);
 
 }
-.active{
-  background-color: var(--dark-black);
+.inter_active{
+  background-color: rgb(255, 31, 121);
 }
 .internship_headings {
   font-family: var(--jost);

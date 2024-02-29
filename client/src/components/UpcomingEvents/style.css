@@ -41,6 +41,172 @@
     /* background-color: palegoldenrod; */
     /* margin-bottom: 15px; */
   }
+  /* ----------EVENT CARDS DIV------------------- */
+  .event_cards_div{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: pink; */
+    margin: 30px 0px;
+
+  }
+  .event_large_card_div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+  }
+  .event_small_card_div{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: coral; */
+  }
+
+  /* ------------SMALL CARD------------------- */
+  .small_card_main_div{
+    /* background-color: beige; */
+    /* padding: 20px; */
+    margin: 10px 0px;
+    max-height: 100px;
+    min-width: 300px;
+    display: flex;
+    border-radius: 10px;
+
+  }
+  .small_card_image_div{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .small_card_image_div_img{
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .small_card_image_div_date{
+    /* background-color: yellow; */
+  }
+  .small_card_image_div_span{
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 50px 50px 0px 50px;
+   
+  }
+  .small_card_content_div{
+    /* background-color: gray; */
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .small_card_content_div_topic{
+    /* background-color: palevioletred; */
+    font-size: 0.7rem;
+  }
+  .small_card_content_div_h2{
+    /* background-color: coral; */
+    font-size: 1rem;
+  }
+  .small_card_content_div_h2 h2{
+    /* background-color: coral; */
+    font-family: var(--jost);
+    font-size: 1.1rem;
+  }
+  .small_card_content_div_span{
+    /* background-color: goldenrod; */
+  }
+  .small_card_content_div_span span{
+    /* background-color: rgb(162, 255, 0); */
+    font-size: 0.7rem;
+  }
+
+/* ---------------------LARGE CARD--------------------------- */
+.large_card_main_div{
+  /* background-color: rgb(38, 115, 5); */
+  /* padding: 20px; */
+  margin: 10px 0px;
+  height: 90%;
+  width: 80%;
+ 
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+.large_card_image_div{
+  /* background-color: rgb(197, 72, 72); */
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  height: 50%;
+}
+.large_card_image_div_img{
+  /* background-color: blueviolet; */
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.large_card_image_div_date{
+  /* background-color: yellow; */
+}
+.large_card_image_div_span{
+  background-color: var(--dark-blue);
+  color: white;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 50px 50px 0px 50px;
+ 
+}
+.large_card_content_div{
+  height: 50%;
+  /* background-color: gray; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.large_card_content_div_topic{
+  /* background-color: palevioletred; */
+  font-size: 0.8rem;
+}
+.large_card_content_div_h2{
+  /* background-color: coral; */
+  /* font-size: 1rem; */
+}
+.large_card_content_div_h2 h2{
+  /* background-color: coral; */
+  font-family: var(--jost);
+  font-size: 1.4rem;
+}
+.large_card_content_div_span{
+  /* background-color: goldenrod; */
+}
+.large_card_content_div_span span{
+  /* background-color: rgb(162, 255, 0); */
+  font-size: 0.8rem;
+}
   /* --------------EVENT CARD------------------ */
   .event_card{
     background-color: white;

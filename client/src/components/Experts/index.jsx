@@ -1,12 +1,12 @@
 import "./style.css";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-import Button from "../Offer/Button";
+// import Button from "../Offer/Button";
 import ExpertCard from "./ExpertCard";
 import expert1 from "../../../public/assets/expert1.jpg";
 import expert2 from "../../../public/assets/expert2.jpeg";
 import expert3 from "../../../public/assets/expert3.jpeg";
 import leafy from "../../../public/assets/team-shape_1_1.png";
-import spiral from "../../../public/assets/team-shape_1_4.png";
+import tree from "../../../public/assets/team-shape_1_2.png";
 
 const index = () => {
   return (
@@ -14,9 +14,11 @@ const index = () => {
       <div className="leafy">
         <img src={leafy} alt="." />
       </div>
-      <div className="spiral">
-        <img src={spiral} alt="." />
+      <div className="tree">
+        <img src={tree} alt="." />
       </div>
+
+     
       <div className="experts_section_inner">
         <div className="experts_section_inner_l_main">
           <div className="experts_section_inner_l">
@@ -33,43 +35,12 @@ const index = () => {
                 OUR INSTRUCTOR
               </span>
               <h2>Meet Our Expert Instructor</h2>
-              <p className="wrapped_text">
-                MARS Exploration has achieved remarkable success in the past two
-                years, with many going on to provide online internships, secure
-                fulfilling careers, and make valuable contributions to Skill Up
-                India. MARS Exploration takes pride in its alumni network, which
-                serves as a testament to the quality of internships and the
-                opportunities provided by the platform.
-              </p>
-            </div>
-
-            <div style={{ display: "flex", width: "100%" }}>
-              <div
-                style={{
-                  display: "flex",
-                  width: "50%",
-                  alignItems: "center",
-                  justifyContent: "left",
-                }}
-              >
-              
-                 <Button content="EXPLORE COURSES" color1="--red1" color2="--dark-black"  text="--light-white"/>
-              </div>
-
-              <div
-                style={{
-                  display: "flex",
-                  width: "50%",
-                  alignItems: "center",
-                  justifyContent: "left",
-                }}
-              >
-                
-                <Button content="JOIN AS TRAINER" color1="--dark-blue" color2="--dark-black"  text="--light-white"/>
-              </div>
             </div>
           </div>
         </div>
+
+
+        
 
         <div className="experts_section_inner_r">
           <div className="expert_card_style">
