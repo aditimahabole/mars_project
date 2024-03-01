@@ -1,0 +1,13 @@
+.ab_youtube_section{
+    background-color: rgb(255, 255, 255);
+    min-height: 150vh;
+    position: relative;
+    z-index: 1;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    height: 100%; 
+    z-index: 5;
+   
+}

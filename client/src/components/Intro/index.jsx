@@ -64,7 +64,6 @@ const App = () => {
       <div className="cloudy_bg">
         <img className="cloudy_bg_size" src={cloudy_bg} alt="bg" />
       </div>
-
       <div className="cloudy_bg_left_bottom">
         <img
           className="cloudy_bg_left_bottom_size"
@@ -85,7 +84,12 @@ const App = () => {
           alt="bgb"
         />
       </div>
+
       <div className="floating_square"></div>
+
+
+
+
 
       <div className="intro_left_div">
         <div className="intro_left_div_content">
@@ -149,6 +153,9 @@ const App = () => {
           <img src={images[imageIndex]} alt={`Pic ${imageIndex + 1}`} />
         </div>
       </div>
+
+
+
     </div>
   );
 };

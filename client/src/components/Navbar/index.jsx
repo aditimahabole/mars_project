@@ -109,7 +109,7 @@ const Index = () => {
           <div>
             {" "}
             <span className="nav_container_bottom_left_links">
-               <Link to="/about-us" className="nav_bottom_links" >
+               <Link to="/about" className="nav_bottom_links" >
                ABOUT US
                </Link> 
             </span>{" "}
