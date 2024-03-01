@@ -1,6 +1,10 @@
 .about_nav_container {
   font-family: var(--roboto);
-  height: 120px;
+  height: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .about_nav_container_bottom {
