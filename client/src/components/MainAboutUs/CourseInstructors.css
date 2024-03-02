@@ -1,0 +1,122 @@
+/* -- */
+.course_inst_section{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.course_inst_headings{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    width: 60%;
+}
+.course_inst_h2_divs{
+    /* background-color: yellow; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.course_inst_headings_h2{
+    font-family: var(--jost);
+    font-size: 36px;
+}
+
+/* ----------BOTTOM PART COURSE------------- */
+.course_instruct_bottom{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 20px;
+    position: relative;
+}
+.course_card_tag{
+    /* position: absolute; */
+    /* bottom: -5%; */
+    /* background-color: white; */
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+    z-index: 10;
+}
+.course_card_tag h3{
+    font-family: var(--jost);
+    font-size: 1.2rem;
+}
+.course_card_tag p{
+    /* font-family: var(--jost); */
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.course_card{
+    --bg: #f7f7f8;
+    --hover-bg: rgba(2, 7, 38, 0.819);
+
+    --hover-text:#ffffff;
+    max-width: 250px;
+    max-height: 300px;
+    text-align: center;
+    background: var(--bg);
+    /* padding: 1.5em; */
+    /* padding-block: 1.8em; */
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* gap: 1em; */
+  }
+  .ce_img{
+    height: 100%;
+    width: 100%;
+  }
+  
+.personal_links{
+    color: white;
+    text-decoration: none;
+}
+  
+  .course_card > :not(span) {
+    transition: .4s cubic-bezier(.6,.4,0,1);
+  }
+  
+
+  
+  .course_card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .4s cubic-bezier(.6,.4,0,1);
+    z-index: 3;
+  }
+  
+  .course_card:hover span {
+    top: 0;
+    font-size: 1.2em;
+  }
+  
+  .course_card:hover {
+    background: var(--hover-bg);
+    /* opacity: 0.5; */
+  }
+  
+  .course_card:hover>div,.course_card:hover>strong {
+    opacity: 0.5;
+  }

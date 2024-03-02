@@ -1,0 +1,75 @@
+.fun_section{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fun_headings{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    width: 60%;
+}
+.fun_h2_divs{
+    /* background-color: yellow; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.fun_headings_h2{
+    font-family: var(--jost);
+    font-size: 36px;
+}
+.fun_headings_p{
+    /* background-color: rgb(161, 233, 28); */
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.1rem;
+  
+}
+
+
+
+/* ------------------BOTTOM PART FUN FACT--------------- */
+.fun_bottom{
+    /* background-color: pink; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fun_bottom_div{
+    flex: 1;
+    min-height: 100px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.fun_bottom_div_h1{
+    /* background-color: blueviolet; */
+}
+.fun1{
+ color: rgb(35, 200, 164);
+
+}
+.fun2{
+    color: rgb(232, 45, 139);
+
+}
+.fun3{
+    color: rgb(255, 191, 0);
+    
+}
+.fun4{
+    color: rgb(156, 71, 236);
+
+}

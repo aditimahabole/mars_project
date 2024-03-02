@@ -63,6 +63,8 @@ const Index = () => {
                 className="slider-items"
                 style={{ transform: `translateX(-${startIndex * 50}%)` }}
               >
+
+                
                 <TestimonialCard
               image={user_image}
               name="David Smith"
