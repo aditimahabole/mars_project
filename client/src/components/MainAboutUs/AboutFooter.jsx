@@ -27,7 +27,7 @@ const Index = () => {
           </div>
           <div className="logo_top_info">
             <p>Call us any time:</p>
-            <h2>+918530636474</h2>
+            <h2>+91 8530636474</h2>
           </div>
         </div>
 
