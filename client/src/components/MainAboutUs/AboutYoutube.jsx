@@ -1,5 +1,12 @@
 import "./AboutYoutube.css";
+import ab_yt from "../../../public/assets/about_main_youtube.jpg";
+import edu1 from "../../../public/assets/ab_u1.png";
+import edu2 from "../../../public/assets/ab_u2.jpeg";
 
+import edu3 from "../../../public/assets/ab_u8.png";
+import edu4 from "../../../public/assets/ab_u7.png";
+import edu5 from "../../../public/assets/ab_u5.png";
+import edu6 from "../../../public/assets/ab_u6.png";
 const AboutYoutube = () => {
   return (
     <div className="ab_youtube_section">
@@ -13,8 +20,48 @@ const AboutYoutube = () => {
         </svg>
       </div>
       <div className="ab_yt_video">
-        <img src="" />
+        <img src={ab_yt} className="ab_yt_video_img" />
+        <div className="ab_play_button">
+          <button className="ab_right_play_button">
+            <svg
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              width="26px"
+            >
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
+      <div className="ab_yt_bottom">
+        <div className="edu_div1">
+          <div className="yt_bottom_university_div">
+            <img src={edu1} />
+          </div>
+          <div className="yt_bottom_university_div">
+            <img src={edu2} />
+          </div>
+          <div className="yt_bottom_university_div">
+            <img src={edu3} />
+          </div>
+        </div>
+
+        <div  className="edu_div2">
+          <div className="yt_bottom_university_div">
+            <img src={edu4} />
+          </div>
+          <div className="yt_bottom_university_div">
+            <img src={edu5} />
+          </div>
+          <div className="yt_bottom_university_div">
+            <img src={edu6} />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,98 @@
-.ab_youtube_section{
-    background-color: rgb(255, 255, 255);
-    min-height: 150vh;
-    position: relative;
-    z-index: 1;
+.ab_youtube_section {
+  background-color: rgb(255, 255, 255);
+  /* min-height: 150vh; */
+  position: relative;
+  z-index: 1;
 }
 .wave {
-    position: absolute;
-    bottom: 0;
-    height: 100%; 
-    z-index: 5;
-   
+  /* position: absolute; */
+  bottom: 0;
+  height: 100%;
+  z-index: 5;
+}
+.ab_yt_video {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: transparent;
+}
+.ab_yt_video_img {
+  height: 448px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: black;
+  opacity: 0.7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ----------YOUTUBE BUTTON-------------- */
+.ab_play_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ab_right_play_button {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(
+    30deg,
+    rgb(245, 74, 140) 20%,
+    rgb(247, 37, 75) 80%
+  );
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running
+    pulse;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.ab_right_play_button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+/* ------------------BOTTOM IMAGES PART-------------------- */
+
+.ab_yt_bottom {
+  margin: 0;
+  background-color: #f8f7f3;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+.yt_bottom_university_div {
+  /* background-color: red; */
+  width: 100%;
+  flex: 1;
+}
+
+.yt_bottom_university_div img {
+  /* background-color: red; */
+  height: 100px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.edu_div1{
+display: flex;
+/* background-color: green; */
+width: 50%;
+align-items: center;
+justify-content: flex-end;
+}
+.edu_div2{
+display: flex;
+/* background-color: blue; */
+justify-content: center;
+width: 50%;
+align-items: center;
 }

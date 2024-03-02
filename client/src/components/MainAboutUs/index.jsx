@@ -1,6 +1,7 @@
 
 import './style.css'
 
+
 import Navbar from './AboutNavbar'
 import TopHeading from './TopHeading'
 import QualityCourses  from './QualityCourses'
@@ -12,6 +13,7 @@ const AboutUsMain = () => {
     <TopHeading/>
     <QualityCourses/>
     <AboutYoutube/>
+    
     </>
   )
 }
