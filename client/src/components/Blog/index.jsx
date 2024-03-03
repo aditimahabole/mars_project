@@ -3,7 +3,8 @@ import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 // import { ArrowRightAlt } from "@mui/icons-material";
 import Card from "./BlogCard";
 import Button from "../Offer/Button";
-import img1 from "../../../public/assets/event_img-1.png";
+// import img1 from "../../../public/assets/event_img-1.png";
+import blog_3 from "../../../public/assets/blog_3.jpg";
 import { useState } from "react";
 
 const Slider = () => {
@@ -70,37 +71,37 @@ const Slider = () => {
                   by_person="mvtmarse"
                   time="12 Jul, 2023"
                   topic="Learn how to take extensive and organized notes to"
-                  image={img1}
+                  image={blog_3}
                 />
                 <Card
                   by_person="mvtmarse"
                   time="12 Jul, 2023"
                   topic="Learn how to take extensive and organized notes to"
-                  image={img1}
+                  image={blog_3}
                 />
                 <Card
                   by_person="mvtmarse"
                   time="12 Jul, 2023"
                   topic="Learn how to take extensive and organized notes to"
-                  image={img1}
+                  image={blog_3}
                 />
                 <Card
                   by_person="mvtmarse"
                   time="12 Jul, 2023"
                   topic="Learn how to take extensive and organized notes to"
-                  image={img1}
+                  image={blog_3}
                 />
                 <Card
                   by_person="mvtmarse"
                   time="12 Jul, 2023"
                   topic="Learn how to take extensive and organized notes to"
-                  image={img1}
+                  image={blog_3}
                 />
                 <Card
                   by_person="mvtmarse"
                   time="12 Jul, 2023"
                   topic="Learn how to take extensive and organized notes to"
-                  image={img1}
+                  image={blog_3}
                 />
               </div>
             </div>

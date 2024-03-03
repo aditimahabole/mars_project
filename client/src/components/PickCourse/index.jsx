@@ -43,7 +43,7 @@ const Index = () => {
         </p>
 
         <h1 className="course_section_heading_h1">
-          Pic A Course To Get Started
+          Pick A Course To Get Started
         </h1>
       </div>
 

@@ -1,8 +1,15 @@
 import Internship from "./Internship";
 import "./style.css";
-import img1 from "../../../public/assets/cat-1_1.svg";
-import img2 from "../../../public/assets/cat-1_2.svg";
-import img3 from "../../../public/assets/cat-1_3.svg";
+// import img1 from "../../../public/assets/cat-1_1.svg";
+// import img2 from "../../../public/assets/cat-1_2.svg";
+// import img3 from "../../../public/assets/cat-1_3.svg";
+import astro_e from "../../../public/assets/astro_e.jpg"
+import astrop_e from "../../../public/assets/astrop_e.jpg"
+import space_e from "../../../public/assets/space_e.jpg"
+import mechanical_e from "../../../public/assets/mechanical_e.jpg"
+import electonic_e from "../../../public/assets/electronic_e.jpg"
+import computer_e from "../../../public/assets/computer_e.jpg"
+
 // import img4 from "../../../public/assets/cat-1_4.svg";
 import { useState } from "react";
 
@@ -175,7 +182,7 @@ const Index = () => {
         {space && (
           <div className="internship_bottom_box">
             <Internship
-              image={img1}
+              image={space_e}
               heading="Space Engineering"
               status="Upcoming Internships"
               star="3"
@@ -183,7 +190,7 @@ const Index = () => {
             />
 
             <Internship
-              image={img2}
+              image={space_e}
               heading="Space Engineering"
               status="Upcoming Internships"
               star="5"
@@ -191,14 +198,14 @@ const Index = () => {
             />
 
             <Internship
-              image={img3}
+              image={space_e}
               heading="Space Engineering"
               status="Upcoming Internships"
               star="2"
               para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
             />
             <Internship
-              image={img3}
+              image={space_e}
               heading="Space Engineering"
               status="Upcoming Internships"
               star="2"
@@ -209,7 +216,7 @@ const Index = () => {
         {astronomy && (
           <div className="internship_bottom_box">
             <Internship
-              image={img1}
+              image={astro_e}
               heading="Astronomy"
               status="Upcoming Internships"
               star="3"
@@ -217,7 +224,7 @@ const Index = () => {
             />
 
             <Internship
-              image={img2}
+              image={astro_e}
               heading="Astronomy"
               status="Upcoming Internships"
               star="5"
@@ -225,14 +232,14 @@ const Index = () => {
             />
 
             <Internship
-              image={img3}
+              image={astro_e}
               heading="Astronomy"
               status="Upcoming Internships"
               star="2"
               para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
             />
             <Internship
-              image={img3}
+              image={astro_e}
               heading="Astronomy"
               status="Upcoming Internships"
               star="2"
@@ -243,7 +250,7 @@ const Index = () => {
         {aerospace && (
           <div className="internship_bottom_box">
             <Internship
-              image={img1}
+              image={astrop_e}
               heading="Aerospace Engineering"
               status="Upcoming Internships"
               star="3"
@@ -251,7 +258,7 @@ const Index = () => {
             />
 
             <Internship
-              image={img2}
+              image={astrop_e}
               heading="Aerospace Engineering"
               status="Upcoming Internships"
               star="5"
@@ -259,14 +266,14 @@ const Index = () => {
             />
 
             <Internship
-              image={img3}
+              image={astrop_e}
               heading="Aerospace Engineering"
               status="Upcoming Internships"
               star="2"
               para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
             />
             <Internship
-              image={img3}
+              image={astrop_e}
               heading="Aerospace Engineering"
               status="Upcoming Internships"
               star="2"
@@ -277,7 +284,7 @@ const Index = () => {
         {mechanical && (
           <div className="internship_bottom_box">
             <Internship
-              image={img1}
+              image={mechanical_e}
               heading="Mechanical Engineering"
               status="Upcoming Internships"
               star="3"
@@ -285,7 +292,7 @@ const Index = () => {
             />
 
             <Internship
-              image={img2}
+              image={mechanical_e}
               heading="Mechanical Engineering"
               status="Upcoming Internships"
               star="5"
@@ -293,14 +300,14 @@ const Index = () => {
             />
 
             <Internship
-              image={img3}
+              image={mechanical_e}
               heading="Mechanical Engineering"
               status="Upcoming Internships"
               star="2"
               para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
             />
             <Internship
-              image={img3}
+              image={mechanical_e}
               heading="Mechanical Engineering"
               status="Upcoming Internships"
               star="2"
@@ -311,7 +318,7 @@ const Index = () => {
         {computer && (
           <div className="internship_bottom_box">
             <Internship
-              image={img1}
+              image={computer_e}
               heading="Computer Engineering"
               status="Upcoming Internships"
               star="3"
@@ -319,7 +326,7 @@ const Index = () => {
             />
 
             <Internship
-              image={img2}
+              image={computer_e}
               heading="Computer Engineering"
               status="Upcoming Internships"
               star="5"
@@ -327,14 +334,14 @@ const Index = () => {
             />
 
             <Internship
-              image={img3}
+              image={computer_e}
               heading="Computer Engineering"
               status="Upcoming Internships"
               star="2"
               para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
             />
             <Internship
-              image={img3}
+              image={computer_e}
               heading="Computer Engineering"
               status="Upcoming Internships"
               star="2"
@@ -345,7 +352,7 @@ const Index = () => {
         {eletronic && (
           <div className="internship_bottom_box">
             <Internship
-              image={img1}
+              image={electonic_e}
               heading="Electronic Engineering"
               status="Upcoming Internships"
               star="3"
@@ -353,7 +360,7 @@ const Index = () => {
             />
 
             <Internship
-              image={img2}
+              image={electonic_e}
               heading="Electronic Engineering"
               status="Upcoming Internships"
               star="5"
@@ -361,14 +368,14 @@ const Index = () => {
             />
 
             <Internship
-              image={img3}
+              image={electonic_e}
               heading="Electronic Engineering"
               status="Upcoming Internships"
               star="2"
               para="hahaa ahah urur ha aaa popo aa aha ahaaya aafafaa a"
             />
             <Internship
-              image={img3}
+              image={electonic_e}
               heading="Electronic Engineering"
               status="Upcoming Internships"
               star="2"
