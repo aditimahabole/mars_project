@@ -1,8 +1,10 @@
 .internship_main_section{
   background-color: rgb(210, 229, 250);
+  /* background-color: var(--dark-black); */
   padding: 30px 0px;
   /* min-height: 100vh; */
   color: var(--dark-black);
+  /* background-image: url('../../../public/assets/intro_2.jpg'); */
   /* background-color: orange; */
 
 

@@ -10,7 +10,7 @@ import Pic2 from "../../../public/assets/astrop_e.jpg";
 import Pic3 from "../../../public/assets/intro_1.jpg";
 import Pic4 from "../../../public/assets/intro_2.jpg";
 
-const images = [Pic1, Pic2, Pic3, Pic4];
+const images = [Pic1, Pic2, Pic3, Pic4,Pic2];
 const texts = [
   "Worlds best Internship Platform",
   "Internship Is Create Better Future",
