@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import { Card, CardContent, Typography, Pagination, Grid, Button } from '@mui/material';
+import { Card, CardContent,  TextField,Typography, Pagination, Grid, Button } from '@mui/material';
 import './BlogPage.css';
 import blog_banner from '../../../public/assets/blog_1.jpg';
+
+import blog_2 from '../../../public/assets/blog_2.jpg'
 
 const MyComponent = () => {
   const [page, setPage] = useState(1);
@@ -32,10 +34,13 @@ const MyComponent = () => {
 
   return (
     <div className='blog_pages_section'>
-      <Grid container spacing={2}>
+      <div style={{width:"45%" , display:"flex" , flexDirection:"column" , justifyContent:"center", alignItems:"center"}}>
+
+     
+      
         {slicedData.map(item => (
-          <Grid item xs={12} sm={6} md={4} key={item.id} style={{padding:"20px"}}>
-            <Card style={{ height: '100%' }}>
+          <Grid item xs={12} sm={6} md={10} key={item.id} style={{display:"flex" ,flexDirection:"column" ,justifyContent:"center" }} >
+            <Card style={{ height: '100%' , margin:"40px" }}>
               <CardContent style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div style={{display:"flex" ,flexDirection:"column" , justifyContent:"space-between" , backgroundColor:"transparent" , height:"100%" }}>
                   <img src={blog_banner} alt={item.title} style={{ width: '100%', marginBottom: '10px' }} />
@@ -56,13 +61,100 @@ const MyComponent = () => {
             </Card>
           </Grid>
         ))}
-      </Grid>
+  
       <Pagination
         count={totalPages}
         page={page}
         onChange={handleChange}
         style={{ marginTop: '20px', textAlign: 'center' }}
       />
+      </div>
+
+      <div style={{ width:"45%" , margin:"40px"}}>
+      {/* Search Section */}
+      <div>
+        <Typography variant="h4" gutterBottom style={{fontFamily:"var(--jost)"}}>
+          Search
+        </Typography>
+        <TextField label="Search" variant="outlined" fullWidth />
+      </div>
+
+      {/* Latest Post Section */}
+      <div style={{marginTop:"20px"}}>
+        <Typography variant="h5" gutterBottom style={{fontFamily:"var(--jost)"}}>
+          Latest Post
+        </Typography>
+        <Grid container spacing={2} >
+          {[1, 2, 3].map((item) => (
+            <Grid item xs={12} key={item}>
+              <Card style={{ display: "flex", marginBottom: "10px" }}>
+                <img
+                  src={blog_2}
+                  alt={`Post ${item}`}
+                  style={{ width: "100px", marginRight: "10px" }}
+                />
+                <CardContent>
+                  <Typography variant="h6" gutterBottom>
+                    Post Title {item}
+                  </Typography>
+                  <Typography variant="subtitle2" color="textSecondary">
+                    Date: {new Date().toLocaleDateString()}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+
+      {/* Categories Section */}
+      <div style={{marginTop:"20px" , fontFamily:"var(--roboto)"}}>
+        <Typography variant="h5" gutterBottom style={{fontFamily:"var(--jost)"}}>
+          Categories
+        </Typography>
+        <ul style={{listStyle:"none" }}>
+          {[1, 2, 3, 4, 5, 6].map((item) => (
+            <li key={item} style={{ margin:"30px 0px"}}>
+              <a href="#" style={{textDecoration:"none" , color:"black"}}>Category {item}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* card */}
+      <div style={{marginTop:"20px"}}>
+      <Card style={{ display: "flex", marginBottom: "10px" , width:"60%" , height:"300px", backgroundColor:"lightblue" , borderRadius:"20px"}}>
+                
+                <CardContent  style={{ display: "flex", flexDirection:"column", alignItems:"center" }}>
+                  <Typography variant="h4" gutterBottom style={{textAlign:"center" , fontFamily:"var(--jost)", fontWeight:"600"}}>
+                    Get Online Courses From <span style={{color:"var(--dark-blue)"}}>MARSE</span> 
+                  </Typography>
+                  <Typography variant="subtitle1" color="textSecondary">
+                    Get the best courses
+                  </Typography>
+                  <button style={{padding:"20px 30px" , border:"none" ,borderRadius:"5px" ,color:"white" , backgroundColor:"var(--dark-blue)" , cursor:"pointer"  ,fontSize:"1.1rem" }}>GET STARTED</button>
+                  
+                </CardContent>
+              </Card>
+
+      </div>
+
+      {/* Tags Section */}
+      <div style={{marginTop:"20px"}}>
+        <Typography variant="h5" gutterBottom style={{fontFamily:"var(--jost)"}}>
+          Tags
+        </Typography>
+        <div style={{display:"flex"}}>
+       
+          <span className="tag" style={{padding:"5px 10px" , border:"2px solid var(--dark-blue)", color:"var(--dark-blue)" , borderRadius:"5px" , fontSize:"1rem" , margin:"5px"  ,cursor:"pointer"}}>Tag 1</span>
+          <span className="tag" style={{padding:"5px 10px" , border:"2px solid var(--dark-blue)", color:"var(--dark-blue)" , borderRadius:"5px" , fontSize:"1rem" , margin:"5px"  ,cursor:"pointer"}}>Tag 1</span>
+          <span className="tag" style={{padding:"5px 10px" , border:"2px solid var(--dark-blue)", color:"var(--dark-blue)" , borderRadius:"5px" , fontSize:"1rem" , margin:"5px"  ,cursor:"pointer"}}>Tag 1</span>
+          <span className="tag" style={{padding:"5px 10px" , border:"2px solid var(--dark-blue)", color:"var(--dark-blue)" , borderRadius:"5px" , fontSize:"1rem" , margin:"5px"  ,cursor:"pointer"}}>Tag 1</span>
+       
+        </div>
+      </div>
+    </div>
+
+
     </div>
   );
 };

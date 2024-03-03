@@ -4,7 +4,7 @@ import "./style.css";
 import Button from "./Button";
 import polygon from "../../../public/assets/cta_2_shape3.png";
 import blue_leaf from "../../../public/assets/cta_2_shape2.png";
-import hero from "../../../public/assets/hero_bg_1_3.png";
+import hero from "../../../public/assets/bg_5.jpg";
 
 import left_blue_leaf from "../../../public/assets/cta_2_shape1.png";
 

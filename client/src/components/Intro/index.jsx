@@ -5,10 +5,10 @@ import cloudy_bg from "../../../public/assets/shape_1_1.png";
 import cloudy_bg_back from "../../../public/assets/shape_1_2.png";
 import cloudy_bg_bottom from "../../../public/assets/shape_1_3.png";
 import cloudy_bg_left_bottom from "../../../public/assets/shape_1_4.png";
-import Pic1 from "../../../public/assets/astro_e.jpg";
-import Pic2 from "../../../public/assets/astrop_e.jpg";
-import Pic3 from "../../../public/assets/intro_1.jpg";
-import Pic4 from "../../../public/assets/intro_2.jpg";
+import Pic1 from "../../../public/assets/bg_1.jpg";
+import Pic2 from "../../../public/assets/bg_2.jpg";
+import Pic3 from "../../../public/assets/bg_3.jpg";
+import Pic4 from "../../../public/assets/bg_4.jpg";
 
 const images = [Pic1, Pic2, Pic3, Pic4,Pic2];
 const texts = [
