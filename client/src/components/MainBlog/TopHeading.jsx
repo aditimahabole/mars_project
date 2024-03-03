@@ -18,13 +18,13 @@ const TopHeading = () => {
       </div>
 
       <div className="about_us_main_heading_text">
-        <h1>Contact Us</h1>
+        <h1>Blogs</h1>
         
         <div style={{ display: "flex" }}>
           <Link to="/" className="to_home_link">
             Home{" "}
           </Link>
-          {"   "} <span className="about_us_span"> &gt; Contact Us</span>
+          {"   "} <span className="about_us_span"> &gt; Blogs</span>
         </div>
       </div>
     </div>

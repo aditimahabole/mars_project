@@ -222,49 +222,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="foot4_div">
-              <div className="foot4_div">
-                <div className="foot4_div_box">
-                  <h2 className="f_head">Get in touch!</h2>
-                  <p>
-                    Subscribe our newsletter to get our latest Update & news
-                  </p>
-                  <div
-                    className="input_div_footer"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      border: "1px solid var(--dark-blue)",
-                      padding: "20px 5px",
-                    }}
-                  >
-                    <input
-                      className="f_input"
-                      type="text"
-                      placeholder="Enter Your Email"
-                    />
-                    <MailOutlined
-                      style={{
-                        fontSize: "16px",
-                        width: "16px",
-                        height: "16px",
-                        marginLeft: "5px",
-                        color: "var(--dark-blue)",
-                      }}
-                    />
-                  </div>
-                  <div className="foot_bt_div">
-                    <Button
-                      content="SUBSCRIBE"
-                      color1="--dark-blue"
-                      color2="--light-grey"
-                      text="--white"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
 
           <hr style={{ backgroundColor: "#AFBCCF", color: "#AFBCCF" }}></hr>

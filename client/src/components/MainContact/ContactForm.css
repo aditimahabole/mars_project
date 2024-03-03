@@ -14,8 +14,7 @@
 .contact_form{
     display: flex;
     flex-direction: column;
-    /* background-color: blanchedalmond; */
-    width: 50%;
+    width: 50vw;
 
 }
 .contact_form_input{

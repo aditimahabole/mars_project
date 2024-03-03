@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home/index';
 import AboutUs from './components/MainAboutUs/index';
 import Contact from './components/MainContact/index';
+import Blog from './components/MainBlog/index';
 import PopularInternship from './components/PopularInternship/index';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<Home />}  />
       <Route path="/about" element={<AboutUs />}  />
       <Route path="/contact" element={<Contact />}  />
+      <Route path="/blog" element={<Blog />}  />
       
 
 
